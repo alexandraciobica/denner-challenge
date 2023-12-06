@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icn-filialen</title>
+    <g id="Stand-01.10." stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-Nav" transform="translate(-571.000000, -72.000000)">
+            <g id="icn-filialen" transform="translate(571.000000, 72.000000)">
+                <g id="Group-7">
+                    <rect id="Rectangle" x="0" y="0" width="45" height="45"></rect>
+                </g>
+                <g id="Group-10" transform="translate(3.919141, 6.910482)">
+                    <polyline id="Shape" stroke="#FF6600" stroke-width="1.4" points="0 11.6015878 19.155725 0 38.3130401 11.6015878"></polyline>
+                    <polyline id="Shape" stroke="#FF6600" stroke-width="1.4" points="34.228118 32.1428571 34.228118 13.2256689 18.9188027 4.69963557 4.08651227 13.2256689 4.08651227 32.1428571"></polyline>
+                    <polyline id="Shape" stroke="#FF6600" stroke-width="1.4" points="6.04469899 4.75847908 6.04469899 1.67821711 10.9508988 1.67821711"></polyline>
+                    <polygon id="Shape" fill="#FF6600" points="22.1485528 16.0714286 19.3719256 21.9699872 16.7195671 16.0714286 12.8571429 16.0714286 12.8571429 26.5178571 15.7432817 26.5178571 15.7432817 20.4868922 18.4888417 26.5178571 20.0390928 26.5178571 22.8304769 20.4868922 22.8304769 26.5178571 25.7142857 26.5178571 25.7142857 16.0714286"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

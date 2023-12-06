@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icn-nachhaltigkeit</title>
+    <g id="Stand-01.10." stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-Nav" transform="translate(-196.000000, -72.000000)">
+            <g id="icn-nachhaltigkeit" transform="translate(196.000000, 72.000000)">
+                <rect id="Rectangle" x="0" y="0" width="45" height="45"></rect>
+                <g id="Group-8" transform="translate(6.000000, 7.000000)" stroke="#FF6600" stroke-width="1.33">
+                    <path d="M25.8548536,23.7839269 C19.8911479,29.8511452 13.3526592,28.6522499 8.59149508,23.8122155 C3.83033099,18.9694868 2.65427717,12.3176386 8.61798287,6.25311453 C14.5816884,0.185896216 32,0 32,0 C32,0 31.8185593,17.7180556 25.8548536,23.7839269 Z" id="Stroke-2"></path>
+                    <path d="M0,31 C8.73986208,28.4686121 7.6427093,23.2271947 15.2380952,15.5" id="Stroke-3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

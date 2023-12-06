@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icn-genossenschaften</title>
+    <g id="Stand-01.10." stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-Nav" transform="translate(-346.000000, -72.000000)">
+            <g id="icn-genossenschaften" transform="translate(346.000000, 72.000000)">
+                <rect id="Rectangle" x="0" y="0" width="45" height="45"></rect>
+                <g id="Group-4" transform="translate(7.000000, 7.000000)">
+                    <ellipse id="Oval" stroke="#FF6600" stroke-width="1.16444444" cx="6.3" cy="16.7049689" rx="6.3" ry="6.45652174"></ellipse>
+                    <ellipse id="Oval" stroke="#FF6600" stroke-width="1.16444444" cx="21.7" cy="3.58695652" rx="3.5" ry="3.58695652"></ellipse>
+                    <ellipse id="Oval" stroke="#FF6600" stroke-width="1.16444444" cx="24.5" cy="16.5" rx="3.5" ry="3.58695652"></ellipse>
+                    <ellipse id="Oval" stroke="#FF6600" stroke-width="1.16444444" cx="21.7" cy="29.4130435" rx="3.5" ry="3.58695652"></ellipse>
+                    <polygon id="Rectangle" fill="#FF6600" transform="translate(14.658264, 8.878326) rotate(-35.000000) translate(-14.658264, -8.878326) " points="9.98821788 8.22260353 19.3441459 8.11071083 19.3283109 9.53404788 9.97238288 9.64594058"></polygon>
+                    <polygon id="Rectangle" fill="#FF6600" transform="translate(14.658264, 24.660934) scale(1, -1) rotate(-35.000000) translate(-14.658264, -24.660934) " points="9.98821788 24.0052122 19.3441459 23.8933195 19.3283109 25.3166566 9.97238288 25.4285493"></polygon>
+                    <rect id="Rectangle" fill="#FF6600" x="12.6" y="15.9875776" width="8.4" height="1.57142857"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icn-supermarkt</title>
+    <g id="Stand-01.10." stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-Nav" transform="translate(-46.000000, -72.000000)">
+            <g id="icn-supermarkt" transform="translate(46.000000, 72.000000)">
+                <rect id="Rectangle" x="0" y="0" width="45" height="45"></rect>
+                <g id="Group-2" transform="translate(9.000000, 7.000000)">
+                    <polygon id="Fill-1" fill="#FF6600" points="14.5835714 22.215 17.3971429 16 21 16 21 27 18.0842857 27 18.0842857 20.6475 15.2614286 27 13.6921429 27 10.9157143 20.6475 10.9157143 27 8 27 8 16 11.9092857 16"></polygon>
+                    <polygon id="Stroke-2" stroke="#FF6600" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="0.933333333 6 27.0666667 6 28 32 0 32"></polygon>
+                    <path d="M8,10.1538462 L8,5.92307692 C8,2.64846154 10.9064286,0 14.5,0 C18.0935714,0 21,2.64846154 21,5.92307692 L21,11" id="Stroke-4" stroke="#FF6600" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

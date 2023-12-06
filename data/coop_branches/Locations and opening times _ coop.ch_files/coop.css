@@ -1,0 +1,182 @@
+@import url('https://libs.coop.ch/fonts/Coop/stylesheet.css');
+@import url('https://libs.coop.ch/fonts/Coop_Bold/stylesheet.css');
+@import url('https://libs.coop.ch/fonts/swc/privacyicons/stylesheet.css');
+@import url('https://libs.coop.ch/fonts/swc/supercard_dc_dsp-icons/stylesheet.css');
+@import url('https://libs.coop.ch/fonts/OpenSans/stylesheet.css');
+
+:root {
+  /* Basic */
+  --wrapper: 1600px;
+
+  /* Colors */
+  --base-color-01: #ff8c00;
+	--base-color-rgb-01: 255,140,0;
+	--base-color-contrast-01: #000000;
+	--base-color-contrast-rgb-01: 0,0,0;
+	--base-color-shade-01: #e07b00;
+	--base-color-tint-01: #ff981a;
+
+  --base-color-02: #ffbb00;
+	--base-color-rgb-02: 255,187,0;
+	--base-color-contrast-02: #000000;
+	--base-color-contrast-rgb-02: 0,0,0;
+	--base-color-shade-02: #e0a500;
+	--base-color-tint-02: #ffc21a;
+
+  --base-color-03: #0068b2;
+	--base-color-rgb-03: 0,104,178;
+	--base-color-contrast-03: #ffffff;
+	--base-color-contrast-rgb-03: 255,255,255;
+	--base-color-shade-03: #005c9d;
+	--base-color-tint-03: #1a77ba;
+
+  --base-color-04: #ffee00;
+	--base-color-rgb-04: 255,238,0;
+	--base-color-contrast-04: #000000;
+	--base-color-contrast-rgb-04: 0,0,0;
+	--base-color-shade-04: #e0d100;
+	--base-color-tint-04: #fff01a;
+
+  --base-color-05: #FF0000;
+	--base-color-rgb-05: 255,0,0;
+	--base-color-contrast-05: #ffffff;
+	--base-color-contrast-rgb-05: 255,255,255;
+	--base-color-shade-05: #e00000;
+	--base-color-tint-05: #ff1a1a;
+
+  --base-color-06: #FFFFFF;
+	--base-color-rgb-06: 255,255,255;
+	--base-color-contrast-06: #000000;
+	--base-color-contrast-rgb-06: 0,0,0;
+	--base-color-shade-06: #e0e0e0;
+	--base-color-tint-06: #ffffff;
+
+  --base-color-07: #000000;
+	--base-color-rgb-07: 0,0,0;
+	--base-color-contrast-07: #ffffff;
+	--base-color-contrast-rgb-07: 255,255,255;
+	--base-color-shade-07: #000000;
+	--base-color-tint-07: #1a1a1a;
+
+  --base-color-white: #FFFFFF;
+	--base-color-rgb-white: 255,255,255;
+	--base-color-contrast-white: #ffffff;
+	--base-color-contrast-rgb-white: 000,000,000;
+	--base-color-shade-white: #FFFFFF;
+	--base-color-tint-white: #1a1a1a;
+
+  --base-color-black: #000000;
+	--base-color-rgb-black: 0,0,0;
+	--base-color-contrast-black: #ffffff;
+	--base-color-contrast-rgb-black: 255,255,255;
+	--base-color-shade-black: #000000;
+	--base-color-tint-black: #1a1a1a;
+
+  --base-gray-00: #333333;
+  --base-gray-rgb-00: 51,51,51;
+  --base-gray-contrast-00: #ffffff;
+  --base-gray-contrast-rgb-00: 255,255,255;
+  --base-gray-shade-00: #2d2d2d;
+  --base-gray-tint-00: #474747;
+
+  --base-gray-10: #787878;
+	--base-gray-rgb-10: 120,120,120;
+	--base-gray-contrast-10: #ffffff;
+	--base-gray-contrast-rgb-10: 255,255,255;
+	--base-gray-shade-10: #6a6a6a;
+	--base-gray-tint-10: #868686;
+
+  --base-gray-20: #808080;
+	--base-gray-rgb-20: 128,128,128;
+	--base-gray-contrast-20: #000000;
+	--base-gray-contrast-rgb-20: 0,0,0;
+	--base-gray-shade-20: #717171;
+	--base-gray-tint-20: #8d8d8d;
+
+  --base-gray-30: #a5a5a5;
+	--base-gray-rgb-30: 165,165,165;
+	--base-gray-contrast-30: #000000;
+	--base-gray-contrast-rgb-30: 0,0,0;
+	--base-gray-shade-30: #919191;
+	--base-gray-tint-30: #aeaeae;
+
+  --base-gray-40: #cdcdcd;
+	--base-gray-rgb-40: 205,205,205;
+	--base-gray-contrast-40: #000000;
+	--base-gray-contrast-rgb-40: 0,0,0;
+	--base-gray-shade-40: #b4b4b4;
+	--base-gray-tint-40: #d2d2d2;
+
+  --base-gray-50: #d0d0d0;
+	--base-gray-rgb-50: 208,208,208;
+	--base-gray-contrast-50: #000000;
+	--base-gray-contrast-rgb-50: 0,0,0;
+	--base-gray-shade-50: #b7b7b7;
+	--base-gray-tint-50: #d5d5d5;
+
+  --base-gray-60: #d6d6d6;
+	--base-gray-rgb-60: 214,214,214;
+	--base-gray-contrast-60: #000000;
+	--base-gray-contrast-rgb-60: 0,0,0;
+	--base-gray-shade-60: #bcbcbc;
+	--base-gray-tint-60: #dadada;
+
+  --base-gray-70: #dbdbdb;
+	--base-gray-rgb-70: 219,219,219;
+	--base-gray-contrast-70: #000000;
+	--base-gray-contrast-rgb-70: 0,0,0;
+	--base-gray-shade-70: #c1c1c1;
+	--base-gray-tint-70: #dfdfdf;
+
+  --base-gray-80: #ebe9e6;
+	--base-gray-rgb-80: 235,233,230;
+	--base-gray-contrast-80: #000000;
+	--base-gray-contrast-rgb-80: 0,0,0;
+	--base-gray-shade-80: #cfcdca;
+	--base-gray-tint-80: #edebe9;
+
+  --base-gray-90: #ebebeb;
+	--base-gray-rgb-90: 235,235,235;
+	--base-gray-contrast-90: #000000;
+	--base-gray-contrast-rgb-90: 0,0,0;
+	--base-gray-shade-90: #cfcfcf;
+	--base-gray-tint-90: #ededed;
+
+  --base-gray-100: #f2f2f2;
+	--base-gray-rgb-100: 242,242,242;
+	--base-gray-contrast-100: #000000;
+	--base-gray-contrast-rgb-100: 0,0,0;
+	--base-gray-shade-100: #d5d5d5;
+	--base-gray-tint-100: #f3f3f3;
+
+  /* Fonts */
+  --base-font-01: 'coopregular', Arial, Helvetica, sans-serif;
+  --base-font-02: "Open Sans", Arial, Helvetica, sans-serif;
+  --base-font-03: 'coopbold', Arial, Helvetica, sans-serif;
+  --font-familiy-global-icon-font: Privacy-Icons-Regular;
+  --font-familiy-dc-dsp-icon-font: icomoon;
+
+  /* Font Sizes */
+  --base-font-size-xxlarge: 2rem;     /* 32px */
+  --base-font-size-xlarge:  1.75rem;  /* 28px */
+  --base-font-size-large:   1.313rem; /* 21px */
+  --base-font-size-regular: 1.125rem; /* 18px */
+  --base-font-size-medium:  1rem;     /* 16px */
+  --base-font-size-small:   0.875rem; /* 14px */
+  --base-font-size-xsmall:  0.75rem;  /* 12px */
+  --base-font-size-xxsmall: 0.625rem; /* 10px */
+
+  /* Icon Sizes */
+  --base-icon-size-xlarge:  7.5rem; /* 120px */
+  --base-icon-size-large:   1.375rem; /* 22px */
+  --base-icon-size-regular: 1.25rem;  /* 20px */
+  --base-icon-size-medium:  1.125rem; /* 18px */
+  --base-icon-size-small:   1rem;     /* 16px */
+  --base-icon-size-xsmall:  0.875rem; /* 14px */
+
+  /* Border Stylings */
+  --base-border-radius-01: 4px;
+
+  --base-border-width-01: 1px;
+  --base-border-width-02: 5px;
+}

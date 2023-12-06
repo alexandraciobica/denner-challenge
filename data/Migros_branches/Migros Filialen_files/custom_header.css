@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Regular.woff2') format('woff2'),
+    url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Text';
+  src: url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Bold.woff2') format('woff2'),
+    url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowTextW05-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowDisplayW05-Bold.woff2') format('woff2'),
+    url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowDisplayW05-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Now Display';
+  src: url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowDisplayW05-Blk.woff2') format('woff2'),
+    url('https://cdn.migros.ch/ch.migros/static/fonts/helvetica-now/HelveticaNowDisplayW05-Blk.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: migros-icons;
+  src: url(https://cdn.migros.ch/ch.migros.msc/clients/migros_ch/20210607073344/fonts/c117328e9c97886f9bbebd37dec97c51.eot);
+  src: url(https://cdn.migros.ch/ch.migros.msc/clients/migros_ch/20210607073344/fonts/c117328e9c97886f9bbebd37dec97c51.eot)
+      format('embedded-opentype'),
+    url(https://cdn.migros.ch/ch.migros.msc/clients/migros_ch/20210607073344/fonts/c6ea2b147117bd48d42b5f7c393b980b.ttf)
+      format('truetype'),
+    url(https://cdn.migros.ch/ch.migros.msc/clients/migros_ch/20210607073344/fonts/f7cdfdb579ed5e870830b3a6e2116f76.woff)
+      format('woff'),
+    url(https://cdn.migros.ch/ch.migros.msc/clients/migros_ch/20210607073344/fonts/204f423abbfd47c968ba4aabade1d5ae.svg)
+      format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 767px) {
+  #storefinder {
+    position: relative;
+  }
+
+  .body-is-fixed #storefinder {
+    z-index: -1;
+  }
+}
+
+.mui-breadcrumb-container {
+  background-color: #fff;
+  position: relative;
+  z-index: 1009;
+}
+.mui-breadcrumb-container:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  opacity: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
+}
+@media screen and (max-width: 767px) {
+  .mui-breadcrumb-container {
+    display: none;
+  }
+}
+.mui-breadcrumb {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 13px 3px;
+  color: #949494;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mui-breadcrumb > li {
+  display: inline;
+  font-family: Helvetica Neue, Helvetica, arial, sans-serif;
+}
+.mui-breadcrumb > li + li:before {
+  font-family: migros-icons;
+  content: '\e602';
+  padding: 0 8px;
+  color: #f60;
+  font-size: 12px;
+}
+.mui-breadcrumb > li:last-child .mui-breadcrumb-link {
+  color: #949494;
+}
+.mui-breadcrumb-link {
+  font-family: Helvetica Neue, Helvetica, arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.23px;
+  color: #333;
+  vertical-align: text-top;
+}
+@media (-ms-high-contrast: none) {
+  .mui-breadcrumb-link {
+    vertical-align: inherit;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mui-breadcrumb-link {
+    font-size: 13px;
+    letter-spacing: 0.27px;
+  }
+}
+.mui-breadcrumb-link:active,
+.mui-breadcrumb-link:hover {
+  color: #de450a;
+}
+.mui-breadcrumb-link.is-collapsed {
+  display: inline-block;
+  width: 25px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
