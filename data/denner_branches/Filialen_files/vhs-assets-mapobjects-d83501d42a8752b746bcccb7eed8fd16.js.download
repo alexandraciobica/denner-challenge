@@ -1,0 +1,1489 @@
+require(['jquery','selectboxit','picker','typeahead','storesjs','async'],function($,typeahead){
+
+    cs2 = jQuery.noConflict();
+
+    var google;
+
+    var showall_label = "Alle Filialen anzeigen";
+    var location_on;
+    var $_pageId = "250";
+    var $_ceId = "1413";
+    var $_ceAction = "locator";
+    var $_zipcity = "";
+    var $_typenum = "666";
+    var $_sys_language_uid = "0";
+
+    var zipcityData = [
+        
+            
+                {zip: "1000", name: "1000 Lausanne"},
+            
+                {zip: "1004", name: "1004 Lausanne"},
+            
+                {zip: "1006", name: "1006 Lausanne"},
+            
+                {zip: "1007", name: "1007 Lausanne"},
+            
+                {zip: "1008", name: "1008 Prilly"},
+            
+                {zip: "1010", name: "1010 Lausanne"},
+            
+                {zip: "1012", name: "1012 Lausanne"},
+            
+                {zip: "1018", name: "1018 Lausanne"},
+            
+                {zip: "1020", name: "1020 Renens VD"},
+            
+                {zip: "1022", name: "1022 Chavannes-Renens"},
+            
+                {zip: "1023", name: "1023 Crissier"},
+            
+                {zip: "1024", name: "1024 Ecublens VD"},
+            
+                {zip: "1028", name: "1028 Préverenges"},
+            
+                {zip: "1030", name: "1030 Bussigny-Lausanne"},
+            
+                {zip: "1032", name: "1032 Romanel-s-Lausanne"},
+            
+                {zip: "1040", name: "1040 Echallens"},
+            
+                {zip: "1042", name: "1042 Assens"},
+            
+                {zip: "1052", name: "1052 Mont-sur-Lausanne"},
+            
+                {zip: "1053", name: "1053 Cugy VD"},
+            
+                {zip: "1066", name: "1066 Epalinges"},
+            
+                {zip: "1073", name: "1073 Savigny"},
+            
+                {zip: "1092", name: "1092 Belmont-Lausanne"},
+            
+                {zip: "1094", name: "1094 Paudex"},
+            
+                {zip: "1110", name: "1110 Morges"},
+            
+                {zip: "1142", name: "1142 Pampigny"},
+            
+                {zip: "1162", name: "1162 St-Prex"},
+            
+                {zip: "1163", name: "1163 Etoy"},
+            
+                {zip: "1170", name: "1170 Aubonne"},
+            
+                {zip: "1180", name: "1180 Rolle"},
+            
+                {zip: "1188", name: "1188 Gimel"},
+            
+                {zip: "1196", name: "1196 Gland"},
+            
+                {zip: "1201", name: "1201 Genève"},
+            
+                {zip: "1202", name: "1202 Genève"},
+            
+                {zip: "1203", name: "1203 Genève"},
+            
+                {zip: "1205", name: "1205 Genève"},
+            
+                {zip: "1207", name: "1207 Genève"},
+            
+                {zip: "1208", name: "1208 Genève"},
+            
+                {zip: "1211", name: "1211 Genève"},
+            
+                {zip: "1212", name: "1212 Grand-Lancy"},
+            
+                {zip: "1213", name: "1213 Onex"},
+            
+                {zip: "1214", name: "1214 Vernier"},
+            
+                {zip: "1217", name: "1217 Meyrin"},
+            
+                {zip: "1218", name: "1218 Grand-Saconnex PAL"},
+            
+                {zip: "1219", name: "1219 Châtelaine"},
+            
+                {zip: "1226", name: "1226 Thônex"},
+            
+                {zip: "1227", name: "1227 Carouge GE"},
+            
+                {zip: "1228", name: "1228 Plan-les-Ouates"},
+            
+                {zip: "1260", name: "1260 Nyon"},
+            
+                {zip: "1273", name: "1273 Arzier"},
+            
+                {zip: "1290", name: "1290 Versoix"},
+            
+                {zip: "1303", name: "1303 Penthaz"},
+            
+                {zip: "1304", name: "1304 Cossonay"},
+            
+                {zip: "1318", name: "1318 Pompaples"},
+            
+                {zip: "1337", name: "1337 Vallorbe"},
+            
+                {zip: "1347", name: "1347 Le Sentier"},
+            
+                {zip: "1348", name: "1348 Le Brassus"},
+            
+                {zip: "1350", name: "1350 Orbe"},
+            
+                {zip: "1373", name: "1373 Chavornay"},
+            
+                {zip: "1400", name: "1400 Yverdon-les-Bains"},
+            
+                {zip: "1424", name: "1424 Champagne"},
+            
+                {zip: "1442", name: "1442 Montagny-près-Yverdon"},
+            
+                {zip: "1450", name: "1450 Ste-Croix"},
+            
+                {zip: "1462", name: "1462 Yvonand"},
+            
+                {zip: "1470", name: "1470 Estavayer-le-Lac"},
+            
+                {zip: "1482", name: "1482 Cugy FR"},
+            
+                {zip: "1510", name: "1510 Moudon"},
+            
+                {zip: "1522", name: "1522 Lucens"},
+            
+                {zip: "1523", name: "1523 Granges-Marnand"},
+            
+                {zip: "1530", name: "1530 Payerne"},
+            
+                {zip: "1562", name: "1562 Corcelles-Payerne"},
+            
+                {zip: "1564", name: "1564 Domdidier"},
+            
+                {zip: "1580", name: "1580 Avenches"},
+            
+                {zip: "1585", name: "1585 Salavaux"},
+            
+                {zip: "1588", name: "1588 Cudrefin"},
+            
+                {zip: "1610", name: "1610 Oron-la-Ville"},
+            
+                {zip: "1615", name: "1615 Bossonnens"},
+            
+                {zip: "1618", name: "1618 Châtel-St-Denis"},
+            
+                {zip: "1627", name: "1627 Vaulruz"},
+            
+                {zip: "1630", name: "1630 Bulle"},
+            
+                {zip: "1635", name: "1635 La Tour-de-Trême"},
+            
+                {zip: "1636", name: "1636 Broc"},
+            
+                {zip: "1637", name: "1637 Charmey (Gruyère)"},
+            
+                {zip: "1670", name: "1670 Ursy"},
+            
+                {zip: "1680", name: "1680 Romont FR"},
+            
+                {zip: "1700", name: "1700 Fribourg"},
+            
+                {zip: "1715", name: "1715 Alterswil FR"},
+            
+                {zip: "1716", name: "1716 Plaffeien"},
+            
+                {zip: "1723", name: "1723 Marly"},
+            
+                {zip: "1726", name: "1726 Farvagny"},
+            
+                {zip: "1731", name: "1731 Ependes FR"},
+            
+                {zip: "1741", name: "1741 Cottens FR"},
+            
+                {zip: "1752", name: "1752 Villars-Glâne 1"},
+            
+                {zip: "1753", name: "1753 Matran"},
+            
+                {zip: "1754", name: "1754 Avry-Centre FR"},
+            
+                {zip: "1763", name: "1763 Granges-Paccot"},
+            
+                {zip: "1772", name: "1772 Grolley"},
+            
+                {zip: "1774", name: "1774 Cousset"},
+            
+                {zip: "1782", name: "1782 Belfaux"},
+            
+                {zip: "1784", name: "1784 Courtepin"},
+            
+                {zip: "1786", name: "1786 Sugiez-Vully"},
+            
+                {zip: "1800", name: "1800 Vevey"},
+            
+                {zip: "1804", name: "1804 Corsier-sur-Vevey"},
+            
+                {zip: "1806", name: "1806 St-Légier-Chiésaz"},
+            
+                {zip: "1814", name: "1814 La Tour-de-Peilz"},
+            
+                {zip: "1815", name: "1815 Clarens"},
+            
+                {zip: "1820", name: "1820 Montreux"},
+            
+                {zip: "1822", name: "1822 Chernex"},
+            
+                {zip: "1847", name: "1847 Rennaz"},
+            
+                {zip: "1852", name: "1852 Roche VD"},
+            
+                {zip: "1854", name: "1854 Leysin"},
+            
+                {zip: "1860", name: "1860 Aigle"},
+            
+                {zip: "1865", name: "1865 Les Diablerets"},
+            
+                {zip: "1868", name: "1868 Collombey"},
+            
+                {zip: "1870", name: "1870 Monthey"},
+            
+                {zip: "1880", name: "1880 Bex"},
+            
+                {zip: "1890", name: "1890 St-Maurice"},
+            
+                {zip: "1896", name: "1896 Vouvry"},
+            
+                {zip: "1897", name: "1897 Bouveret"},
+            
+                {zip: "1904", name: "1904 Vernayaz"},
+            
+                {zip: "1907", name: "1907 Saxon"},
+            
+                {zip: "1908", name: "1908 Riddes"},
+            
+                {zip: "1920", name: "1920 Martigny"},
+            
+                {zip: "1926", name: "1926 Fully"},
+            
+                {zip: "1933", name: "1933 Sembrancher"},
+            
+                {zip: "1936", name: "1936 Verbier"},
+            
+                {zip: "1950", name: "1950 Sion"},
+            
+                {zip: "1963", name: "1963 Vétroz"},
+            
+                {zip: "1964", name: "1964 Conthey"},
+            
+                {zip: "1965", name: "1965 Savièse"},
+            
+                {zip: "1966", name: "1966 Ayent"},
+            
+                {zip: "1971", name: "1971 Champlan"},
+            
+                {zip: "1981", name: "1981 Vex"},
+            
+                {zip: "1984", name: "1984 Les Haudères"},
+            
+                {zip: "2000", name: "2000 Neuchâtel"},
+            
+                {zip: "2016", name: "2016 Cortaillod"},
+            
+                {zip: "2017", name: "2017 Boudry"},
+            
+                {zip: "2024", name: "2024 St-Aubin-Sauges"},
+            
+                {zip: "2034", name: "2034 Peseux"},
+            
+                {zip: "2053", name: "2053 Cernier"},
+            
+                {zip: "2074", name: "2074 Marin"},
+            
+                {zip: "2108", name: "2108 Couvet"},
+            
+                {zip: "2114", name: "2114 Fleurier"},
+            
+                {zip: "2300", name: "2300 La Chaux-de-Fds 1"},
+            
+                {zip: "2336", name: "2336 Les Bois"},
+            
+                {zip: "2350", name: "2350 Saignelégier"},
+            
+                {zip: "2400", name: "2400 Le Locle"},
+            
+                {zip: "2500", name: "2500 Biel/Bienne"},
+            
+                {zip: "2502", name: "2502 Biel/Bienne"},
+            
+                {zip: "2503", name: "2503 Biel/Bienne"},
+            
+                {zip: "2504", name: "2504 Biel/Bienne"},
+            
+                {zip: "2520", name: "2520 La Neuveville"},
+            
+                {zip: "2540", name: "2540 Grenchen"},
+            
+                {zip: "2542", name: "2542 Pieterlen"},
+            
+                {zip: "2543", name: "2543 Lengnau BE"},
+            
+                {zip: "2555", name: "2555 Brügg BE"},
+            
+                {zip: "2560", name: "2560 Nidau"},
+            
+                {zip: "2562", name: "2562 Port"},
+            
+                {zip: "2575", name: "2575 Gerolfingen"},
+            
+                {zip: "2576", name: "2576 Lüscherz"},
+            
+                {zip: "2606", name: "2606 Corgémont"},
+            
+                {zip: "2610", name: "2610 St-Imier"},
+            
+                {zip: "2710", name: "2710 Tavannes"},
+            
+                {zip: "2720", name: "2720 Tramelan"},
+            
+                {zip: "2740", name: "2740 Moutier"},
+            
+                {zip: "2800", name: "2800 Delémont"},
+            
+                {zip: "2822", name: "2822 Courroux"},
+            
+                {zip: "2830", name: "2830 Courrendlin"},
+            
+                {zip: "2854", name: "2854 Bassecourt"},
+            
+                {zip: "2900", name: "2900 Porrentruy"},
+            
+                {zip: "2942", name: "2942 Alle"},
+            
+                {zip: "3007", name: "3007 Bern"},
+            
+                {zip: "3008", name: "3008 Bern"},
+            
+                {zip: "3011", name: "3011 Bern"},
+            
+                {zip: "3012", name: "3012 Bern"},
+            
+                {zip: "3013", name: "3013 Bern"},
+            
+                {zip: "3014", name: "3014 Bern"},
+            
+                {zip: "3015", name: "3015 Bern"},
+            
+                {zip: "3018", name: "3018 Bern-Bümpliz"},
+            
+                {zip: "3027", name: "3027 Bern"},
+            
+                {zip: "3032", name: "3032 Hinterkappelen"},
+            
+                {zip: "3047", name: "3047 Bremgarten"},
+            
+                {zip: "3052", name: "3052 Zollikofen"},
+            
+                {zip: "3053", name: "3053 Münchenbuchsee"},
+            
+                {zip: "3063", name: "3063 Ittigen"},
+            
+                {zip: "3072", name: "3072 Ostermundigen"},
+            
+                {zip: "3073", name: "3073 Gümligen"},
+            
+                {zip: "3076", name: "3076 Worb"},
+            
+                {zip: "3084", name: "3084 Wabern"},
+            
+                {zip: "3097", name: "3097 Liebefeld"},
+            
+                {zip: "3098", name: "3098 Köniz"},
+            
+                {zip: "3110", name: "3110 Münsingen"},
+            
+                {zip: "3113", name: "3113 Rubigen"},
+            
+                {zip: "3123", name: "3123 Belp"},
+            
+                {zip: "3174", name: "3174 Thörishaus"},
+            
+                {zip: "3175", name: "3175 Flamatt"},
+            
+                {zip: "3177", name: "3177 Laupen BE"},
+            
+                {zip: "3185", name: "3185 Schmitten FR"},
+            
+                {zip: "3186", name: "3186 Düdingen"},
+            
+                {zip: "3238", name: "3238 Gals"},
+            
+                {zip: "3250", name: "3250 Lyss"},
+            
+                {zip: "3254", name: "3254 Messen"},
+            
+                {zip: "3270", name: "3270 Aarberg"},
+            
+                {zip: "3280", name: "3280 Murten"},
+            
+                {zip: "3283", name: "3283 Kallnach"},
+            
+                {zip: "3292", name: "3292 Busswil b. Büren"},
+            
+                {zip: "3294", name: "3294 Büren an der Aare"},
+            
+                {zip: "3302", name: "3302 Moosseedorf"},
+            
+                {zip: "3321", name: "3321 Schönbühl EKZ"},
+            
+                {zip: "3322", name: "3322 Urtenen-Schönbühl"},
+            
+                {zip: "3360", name: "3360 Herzogenbuchsee"},
+            
+                {zip: "3400", name: "3400 Burgdorf"},
+            
+                {zip: "3415", name: "3415 Hasle b. Burgdorf"},
+            
+                {zip: "3422", name: "3422 Kirchberg"},
+            
+                {zip: "3454", name: "3454 Sumiswald"},
+            
+                {zip: "3457", name: "3457 Wasen im Emmental"},
+            
+                {zip: "3510", name: "3510 Konolfingen"},
+            
+                {zip: "3550", name: "3550 Langnau i. E."},
+            
+                {zip: "3552", name: "3552 Bärau-Langnau"},
+            
+                {zip: "3600", name: "3600 Thun"},
+            
+                {zip: "3604", name: "3604 Thun"},
+            
+                {zip: "3612", name: "3612 Steffisburg"},
+            
+                {zip: "3626", name: "3626 Hünibach"},
+            
+                {zip: "3627", name: "3627 Heimberg"},
+            
+                {zip: "3652", name: "3652 Hilterfingen"},
+            
+                {zip: "3661", name: "3661 Uetendorf"},
+            
+                {zip: "3665", name: "3665 Wattenwil"},
+            
+                {zip: "3700", name: "3700 Spiez"},
+            
+                {zip: "3703", name: "3703 Aeschi b. Spiez"},
+            
+                {zip: "3714", name: "3714 Frutigen"},
+            
+                {zip: "3752", name: "3752 Wimmis"},
+            
+                {zip: "3770", name: "3770 Zweisimmen"},
+            
+                {zip: "3780", name: "3780 Gstaad"},
+            
+                {zip: "3800", name: "3800 Interlaken"},
+            
+                {zip: "3812", name: "3812 Wilderswil"},
+            
+                {zip: "3900", name: "3900 Brig"},
+            
+                {zip: "3902", name: "3902 Glis"},
+            
+                {zip: "3904", name: "3904 Naters"},
+            
+                {zip: "3910", name: "3910 Saas Grund"},
+            
+                {zip: "3920", name: "3920 Zermatt"},
+            
+                {zip: "3924", name: "3924 St. Niklaus VS"},
+            
+                {zip: "3925", name: "3925 Grächen"},
+            
+                {zip: "3927", name: "3927 Herbriggen"},
+            
+                {zip: "3930", name: "3930 Visp"},
+            
+                {zip: "3945", name: "3945 Gampel"},
+            
+                {zip: "3952", name: "3952 Susten"},
+            
+                {zip: "3960", name: "3960 Sierre"},
+            
+                {zip: "3963", name: "3963 Crans-Montana"},
+            
+                {zip: "3977", name: "3977 Granges VS"},
+            
+                {zip: "4051", name: "4051 Basel"},
+            
+                {zip: "4052", name: "4052 Basel"},
+            
+                {zip: "4053", name: "4053 Basel"},
+            
+                {zip: "4055", name: "4055 Basel"},
+            
+                {zip: "4056", name: "4056 Basel"},
+            
+                {zip: "4057", name: "4057 Basel"},
+            
+                {zip: "4058", name: "4058 Basel"},
+            
+                {zip: "4102", name: "4102 Binningen"},
+            
+                {zip: "4104", name: "4104 Oberwil BL"},
+            
+                {zip: "4106", name: "4106 Therwil"},
+            
+                {zip: "4107", name: "4107 Ettingen"},
+            
+                {zip: "4123", name: "4123 Allschwil"},
+            
+                {zip: "4125", name: "4125 Riehen"},
+            
+                {zip: "4127", name: "4127 Birsfelden"},
+            
+                {zip: "4132", name: "4132 Muttenz"},
+            
+                {zip: "4133", name: "4133 Pratteln"},
+            
+                {zip: "4142", name: "4142 Münchenstein"},
+            
+                {zip: "4143", name: "4143 Dornach"},
+            
+                {zip: "4144", name: "4144 Arlesheim"},
+            
+                {zip: "4147", name: "4147 Aesch BL"},
+            
+                {zip: "4153", name: "4153 Reinach BL"},
+            
+                {zip: "4222", name: "4222 Zwingen"},
+            
+                {zip: "4226", name: "4226 Breitenbach"},
+            
+                {zip: "4242", name: "4242 Laufen"},
+            
+                {zip: "4244", name: "4244 Röschenz"},
+            
+                {zip: "4303", name: "4303 Kaiseraugst"},
+            
+                {zip: "4310", name: "4310 Rheinfelden"},
+            
+                {zip: "4313", name: "4313 Möhlin"},
+            
+                {zip: "4332", name: "4332 Stein AG"},
+            
+                {zip: "4410", name: "4410 Liestal"},
+            
+                {zip: "4414", name: "4414 Füllinsdorf"},
+            
+                {zip: "4415", name: "4415 Lausen"},
+            
+                {zip: "4416", name: "4416 Bubendorf"},
+            
+                {zip: "4418", name: "4418 Reigoldswil"},
+            
+                {zip: "4450", name: "4450 Sissach"},
+            
+                {zip: "4460", name: "4460 Gelterkinden"},
+            
+                {zip: "4500", name: "4500 Solothurn"},
+            
+                {zip: "4512", name: "4512 Bellach"},
+            
+                {zip: "4513", name: "4513 Langendorf"},
+            
+                {zip: "4528", name: "4528 Zuchwil"},
+            
+                {zip: "4537", name: "4537 Wiedlisbach"},
+            
+                {zip: "4542", name: "4542 Luterbach"},
+            
+                {zip: "4543", name: "4543 Deitingen"},
+            
+                {zip: "4552", name: "4552 Derendingen"},
+            
+                {zip: "4562", name: "4562 Biberist"},
+            
+                {zip: "4563", name: "4563 Gerlafingen"},
+            
+                {zip: "4573", name: "4573 Lohn-Ammannsegg"},
+            
+                {zip: "4600", name: "4600 Olten"},
+            
+                {zip: "4614", name: "4614 Hägendorf"},
+            
+                {zip: "4622", name: "4622 Egerkingen"},
+            
+                {zip: "4632", name: "4632 Trimbach"},
+            
+                {zip: "4654", name: "4654 Lostorf"},
+            
+                {zip: "4657", name: "4657 Dulliken"},
+            
+                {zip: "4663", name: "4663 Aarburg"},
+            
+                {zip: "4665", name: "4665 Oftringen"},
+            
+                {zip: "4702", name: "4702 Oensingen"},
+            
+                {zip: "4704", name: "4704 Niederbipp"},
+            
+                {zip: "4710", name: "4710 Balsthal"},
+            
+                {zip: "4712", name: "4712 Laupersdorf"},
+            
+                {zip: "4800", name: "4800 Zofingen"},
+            
+                {zip: "4802", name: "4802 Strengelbach"},
+            
+                {zip: "4853", name: "4853 Murgenthal"},
+            
+                {zip: "4900", name: "4900 Langenthal"},
+            
+                {zip: "4912", name: "4912 Aarwangen"},
+            
+                {zip: "4950", name: "4950 Huttwil"},
+            
+                {zip: "5000", name: "5000 Aarau"},
+            
+                {zip: "5004", name: "5004 Aarau"},
+            
+                {zip: "5014", name: "5014 Gretzenbach"},
+            
+                {zip: "5018", name: "5018 Erlinsbach"},
+            
+                {zip: "5033", name: "5033 Buchs AG"},
+            
+                {zip: "5034", name: "5034 Suhr"},
+            
+                {zip: "5035", name: "5035 Unterentfelden"},
+            
+                {zip: "5037", name: "5037 Muhen"},
+            
+                {zip: "5070", name: "5070 Frick"},
+            
+                {zip: "5102", name: "5102 Rupperswil"},
+            
+                {zip: "5113", name: "5113 Holderbank AG"},
+            
+                {zip: "5200", name: "5200 Brugg AG"},
+            
+                {zip: "5210", name: "5210 Windisch"},
+            
+                {zip: "5225", name: "5225 Bözberg"},
+            
+                {zip: "5242", name: "5242 Lupfig"},
+            
+                {zip: "5272", name: "5272 Gansingen"},
+            
+                {zip: "5303", name: "5303 Würenlingen"},
+            
+                {zip: "5304", name: "5304 Endingen"},
+            
+                {zip: "5312", name: "5312 Döttingen"},
+            
+                {zip: "5316", name: "5316 Leuggern"},
+            
+                {zip: "5330", name: "5330 Bad Zurzach"},
+            
+                {zip: "5400", name: "5400 Baden"},
+            
+                {zip: "5412", name: "5412 Gebenstorf"},
+            
+                {zip: "5415", name: "5415 Nussbaumen (AG)"},
+            
+                {zip: "5430", name: "5430 Wettingen"},
+            
+                {zip: "5442", name: "5442 Fislisbach"},
+            
+                {zip: "5502", name: "5502 Hunzenschwil"},
+            
+                {zip: "5507", name: "5507 Mellingen"},
+            
+                {zip: "5600", name: "5600 Lenzburg"},
+            
+                {zip: "5605", name: "5605 Dottikon"},
+            
+                {zip: "5610", name: "5610 Wohlen AG"},
+            
+                {zip: "5612", name: "5612 Villmergen"},
+            
+                {zip: "5614", name: "5614 Sarmenstorf"},
+            
+                {zip: "5620", name: "5620 Bremgarten AG"},
+            
+                {zip: "5630", name: "5630 Muri AG"},
+            
+                {zip: "5703", name: "5703 Seon"},
+            
+                {zip: "5722", name: "5722 Gränichen"},
+            
+                {zip: "5726", name: "5726 Unterkulm"},
+            
+                {zip: "5734", name: "5734 Reinach AG"},
+            
+                {zip: "5737", name: "5737 Menziken"},
+            
+                {zip: "5742", name: "5742 Kölliken"},
+            
+                {zip: "6003", name: "6003 Luzern"},
+            
+                {zip: "6004", name: "6004 Luzern"},
+            
+                {zip: "6005", name: "6005 Luzern"},
+            
+                {zip: "6006", name: "6006 Luzern"},
+            
+                {zip: "6010", name: "6010 Kriens"},
+            
+                {zip: "6014", name: "6014 Luzern"},
+            
+                {zip: "6015", name: "6015 Luzern"},
+            
+                {zip: "6017", name: "6017 Ruswil"},
+            
+                {zip: "6020", name: "6020 Emmenbrücke"},
+            
+                {zip: "6022", name: "6022 Grosswangen"},
+            
+                {zip: "6023", name: "6023 Rothenburg"},
+            
+                {zip: "6030", name: "6030 Ebikon"},
+            
+                {zip: "6032", name: "6032 Emmen"},
+            
+                {zip: "6048", name: "6048 Horw"},
+            
+                {zip: "6060", name: "6060 Sarnen"},
+            
+                {zip: "6072", name: "6072 Sachseln"},
+            
+                {zip: "6102", name: "6102 Malters"},
+            
+                {zip: "6110", name: "6110 Wolhusen"},
+            
+                {zip: "6122", name: "6122 Menznau"},
+            
+                {zip: "6130", name: "6130 Willisau"},
+            
+                {zip: "6170", name: "6170 Schüpfheim"},
+            
+                {zip: "6173", name: "6173 Flühli LU"},
+            
+                {zip: "6182", name: "6182 Escholzmatt"},
+            
+                {zip: "6207", name: "6207 Nottwil"},
+            
+                {zip: "6210", name: "6210 Sursee"},
+            
+                {zip: "6221", name: "6221 Rickenbach LU"},
+            
+                {zip: "6242", name: "6242 Wauwil"},
+            
+                {zip: "6244", name: "6244 Nebikon"},
+            
+                {zip: "6247", name: "6247 Schötz"},
+            
+                {zip: "6252", name: "6252 Dagmersellen"},
+            
+                {zip: "6260", name: "6260 Reiden"},
+            
+                {zip: "6274", name: "6274 Eschenbach LU"},
+            
+                {zip: "6280", name: "6280 Hochdorf"},
+            
+                {zip: "6300", name: "6300 Zug"},
+            
+                {zip: "6303", name: "6303 Zug"},
+            
+                {zip: "6312", name: "6312 Steinhausen"},
+            
+                {zip: "6313", name: "6313 Menzingen"},
+            
+                {zip: "6314", name: "6314 Unterägeri"},
+            
+                {zip: "6330", name: "6330 Cham"},
+            
+                {zip: "6340", name: "6340 Baar"},
+            
+                {zip: "6343", name: "6343 Rotkreuz"},
+            
+                {zip: "6362", name: "6362 Stansstad"},
+            
+                {zip: "6370", name: "6370 Stans"},
+            
+                {zip: "6375", name: "6375 Beckenried"},
+            
+                {zip: "6403", name: "6403 Küssnacht am Rigi"},
+            
+                {zip: "6410", name: "6410 Goldau"},
+            
+                {zip: "6422", name: "6422 Steinen"},
+            
+                {zip: "6423", name: "6423 Seewen SZ"},
+            
+                {zip: "6431", name: "6431 Schwyz"},
+            
+                {zip: "6438", name: "6438 Ibach"},
+            
+                {zip: "6440", name: "6440 Brunnen"},
+            
+                {zip: "6460", name: "6460 Altdorf UR"},
+            
+                {zip: "6472", name: "6472 Erstfeld"},
+            
+                {zip: "6500", name: "6500 Bellinzona"},
+            
+                {zip: "6512", name: "6512 Giubiasco"},
+            
+                {zip: "6513", name: "6513 Monte Carasso"},
+            
+                {zip: "6527", name: "6527 Lodrino"},
+            
+                {zip: "6532", name: "6532 Castione"},
+            
+                {zip: "6533", name: "6533 Lumino"},
+            
+                {zip: "6537", name: "6537 Grono"},
+            
+                {zip: "6565", name: "6565 S. Bernardino"},
+            
+                {zip: "6572", name: "6572 Quartino"},
+            
+                {zip: "6592", name: "6592 S. Antonino"},
+            
+                {zip: "6595", name: "6595 Riazzino"},
+            
+                {zip: "6598", name: "6598 Tenero"},
+            
+                {zip: "6600", name: "6600 Locarno"},
+            
+                {zip: "6616", name: "6616 Losone"},
+            
+                {zip: "6648", name: "6648 Minusio"},
+            
+                {zip: "6673", name: "6673 Maggia"},
+            
+                {zip: "6702", name: "6702 Claro"},
+            
+                {zip: "6710", name: "6710 Biasca"},
+            
+                {zip: "6713", name: "6713 Malvaglia"},
+            
+                {zip: "6718", name: "6718 Olivone"},
+            
+                {zip: "6745", name: "6745 Giornico"},
+            
+                {zip: "6760", name: "6760 Faido"},
+            
+                {zip: "6780", name: "6780 Airolo"},
+            
+                {zip: "6802", name: "6802 Rivera"},
+            
+                {zip: "6805", name: "6805 Mezzovico"},
+            
+                {zip: "6807", name: "6807 Taverne"},
+            
+                {zip: "6814", name: "6814 Lamone"},
+            
+                {zip: "6818", name: "6818 Melano"},
+            
+                {zip: "6826", name: "6826 Riva S. Vitale"},
+            
+                {zip: "6830", name: "6830 Chiasso"},
+            
+                {zip: "6834", name: "6834 Morbio Inferiore"},
+            
+                {zip: "6850", name: "6850 Mendrisio"},
+            
+                {zip: "6855", name: "6855 Stabio"},
+            
+                {zip: "6877", name: "6877 Coldrerio"},
+            
+                {zip: "6900", name: "6900 Lugano"},
+            
+                {zip: "6916", name: "6916 Grancia"},
+            
+                {zip: "6932", name: "6932 Breganzona"},
+            
+                {zip: "6942", name: "6942 Savosa"},
+            
+                {zip: "6950", name: "6950 Tesserete"},
+            
+                {zip: "6962", name: "6962 Viganello"},
+            
+                {zip: "6982", name: "6982 Agno"},
+            
+                {zip: "6983", name: "6983 Magliaso"},
+            
+                {zip: "6987", name: "6987 Caslano"},
+            
+                {zip: "7000", name: "7000 Chur"},
+            
+                {zip: "7013", name: "7013 Domat/Ems"},
+            
+                {zip: "7017", name: "7017 Flims Dorf"},
+            
+                {zip: "7050", name: "7050 Arosa"},
+            
+                {zip: "7130", name: "7130 Ilanz"},
+            
+                {zip: "7151", name: "7151 Schluein"},
+            
+                {zip: "7188", name: "7188 Sedrun"},
+            
+                {zip: "7203", name: "7203 Trimmis"},
+            
+                {zip: "7205", name: "7205 Zizers"},
+            
+                {zip: "7220", name: "7220 Schiers"},
+            
+                {zip: "7240", name: "7240 Küblis"},
+            
+                {zip: "7270", name: "7270 Davos 2"},
+            
+                {zip: "7302", name: "7302 Landquart"},
+            
+                {zip: "7403", name: "7403 Rhäzüns"},
+            
+                {zip: "7417", name: "7417 Paspels"},
+            
+                {zip: "7500", name: "7500 St. Moritz"},
+            
+                {zip: "7503", name: "7503 Samedan"},
+            
+                {zip: "7530", name: "7530 Zernez"},
+            
+                {zip: "7537", name: "7537 Müstair"},
+            
+                {zip: "7550", name: "7550 Scuol"},
+            
+                {zip: "7748", name: "7748 Campascio"},
+            
+                {zip: "8004", name: "8004 Zürich"},
+            
+                {zip: "8005", name: "8005 Zürich"},
+            
+                {zip: "8006", name: "8006 Zürich"},
+            
+                {zip: "8008", name: "8008 Zürich"},
+            
+                {zip: "8032", name: "8032 Zürich"},
+            
+                {zip: "8037", name: "8037 Zürich"},
+            
+                {zip: "8038", name: "8038 Zürich"},
+            
+                {zip: "8044", name: "8044 Zürich"},
+            
+                {zip: "8045", name: "8045 Zürich"},
+            
+                {zip: "8046", name: "8046 Zürich"},
+            
+                {zip: "8047", name: "8047 Zürich"},
+            
+                {zip: "8048", name: "8048 Zürich"},
+            
+                {zip: "8049", name: "8049 Zürich"},
+            
+                {zip: "8050", name: "8050 Zürich"},
+            
+                {zip: "8051", name: "8051 Zürich"},
+            
+                {zip: "8052", name: "8052 Zürich"},
+            
+                {zip: "8053", name: "8053 Zürich"},
+            
+                {zip: "8055", name: "8055 Zürich"},
+            
+                {zip: "8057", name: "8057 Zürich"},
+            
+                {zip: "8102", name: "8102 Oberengstringen"},
+            
+                {zip: "8105", name: "8105 Regensdorf"},
+            
+                {zip: "8107", name: "8107 Buchs ZH"},
+            
+                {zip: "8117", name: "8117 Fällanden"},
+            
+                {zip: "8126", name: "8126 Zumikon"},
+            
+                {zip: "8132", name: "8132 Egg b. Zürich"},
+            
+                {zip: "8134", name: "8134 Adliswil"},
+            
+                {zip: "8135", name: "8135 Langnau am Albis"},
+            
+                {zip: "8152", name: "8152 Glattbrugg"},
+            
+                {zip: "8153", name: "8153 Rümlang"},
+            
+                {zip: "8157", name: "8157 Dielsdorf"},
+            
+                {zip: "8173", name: "8173 Neerach"},
+            
+                {zip: "8180", name: "8180 Bülach"},
+            
+                {zip: "8193", name: "8193 Eglisau"},
+            
+                {zip: "8200", name: "8200 Schaffhausen"},
+            
+                {zip: "8207", name: "8207 Schaffhausen"},
+            
+                {zip: "8212", name: "8212 Neuhausen"},
+            
+                {zip: "8260", name: "8260 Stein am Rhein"},
+            
+                {zip: "8280", name: "8280 Kreuzlingen"},
+            
+                {zip: "8302", name: "8302 Kloten"},
+            
+                {zip: "8303", name: "8303 Bassersdorf"},
+            
+                {zip: "8304", name: "8304 Wallisellen"},
+            
+                {zip: "8306", name: "8306 Brüttisellen"},
+            
+                {zip: "8307", name: "8307 Effretikon"},
+            
+                {zip: "8320", name: "8320 Fehraltorf"},
+            
+                {zip: "8330", name: "8330 Pfäffikon ZH"},
+            
+                {zip: "8340", name: "8340 Hinwil"},
+            
+                {zip: "8353", name: "8353 Elgg"},
+            
+                {zip: "8355", name: "8355 Aadorf"},
+            
+                {zip: "8370", name: "8370 Sirnach"},
+            
+                {zip: "8400", name: "8400 Winterthur"},
+            
+                {zip: "8404", name: "8404 Winterthur"},
+            
+                {zip: "8405", name: "8405 Winterthur"},
+            
+                {zip: "8406", name: "8406 Winterthur"},
+            
+                {zip: "8409", name: "8409 Winterthur"},
+            
+                {zip: "8413", name: "8413 Neftenbach"},
+            
+                {zip: "8422", name: "8422 Pfungen"},
+            
+                {zip: "8424", name: "8424 Embrach"},
+            
+                {zip: "8451", name: "8451 Kleinandelfingen"},
+            
+                {zip: "8494", name: "8494 Bauma"},
+            
+                {zip: "8500", name: "8500 Frauenfeld"},
+            
+                {zip: "8570", name: "8570 Weinfelden"},
+            
+                {zip: "8572", name: "8572 Berg TG"},
+            
+                {zip: "8580", name: "8580 Amriswil"},
+            
+                {zip: "8583", name: "8583 Sulgen"},
+            
+                {zip: "8590", name: "8590 Romanshorn"},
+            
+                {zip: "8600", name: "8600 Dübendorf"},
+            
+                {zip: "8603", name: "8603 Schwerzenbach"},
+            
+                {zip: "8604", name: "8604 Volketswil"},
+            
+                {zip: "8606", name: "8606 Greifensee"},
+            
+                {zip: "8610", name: "8610 Uster"},
+            
+                {zip: "8617", name: "8617 Mönchaltorf"},
+            
+                {zip: "8618", name: "8618 Oetwil am See"},
+            
+                {zip: "8620", name: "8620 Wetzikon ZH"},
+            
+                {zip: "8623", name: "8623 Wetzikon ZH"},
+            
+                {zip: "8625", name: "8625 Gossau ZH"},
+            
+                {zip: "8630", name: "8630 Rüti ZH"},
+            
+                {zip: "8634", name: "8634 Hombrechtikon"},
+            
+                {zip: "8636", name: "8636 Wald ZH"},
+            
+                {zip: "8640", name: "8640 Rapperswil SG"},
+            
+                {zip: "8645", name: "8645 Jona"},
+            
+                {zip: "8703", name: "8703 Erlenbach ZH"},
+            
+                {zip: "8706", name: "8706 Feldmeilen"},
+            
+                {zip: "8708", name: "8708 Männedorf"},
+            
+                {zip: "8712", name: "8712 Stäfa"},
+            
+                {zip: "8716", name: "8716 Schmerikon"},
+            
+                {zip: "8718", name: "8718 Schänis"},
+            
+                {zip: "8730", name: "8730 Uznach"},
+            
+                {zip: "8733", name: "8733 Eschenbach SG"},
+            
+                {zip: "8737", name: "8737 Gommiswald"},
+            
+                {zip: "8750", name: "8750 Glarus"},
+            
+                {zip: "8800", name: "8800 Thalwil"},
+            
+                {zip: "8802", name: "8802 Kilchberg ZH"},
+            
+                {zip: "8803", name: "8803 Rüschlikon"},
+            
+                {zip: "8805", name: "8805 Richterswil"},
+            
+                {zip: "8807", name: "8807 Freienbach"},
+            
+                {zip: "8808", name: "8808 Pfäffikon SZ"},
+            
+                {zip: "8810", name: "8810 Horgen"},
+            
+                {zip: "8820", name: "8820 Wädenswil"},
+            
+                {zip: "8832", name: "8832 Wollerau"},
+            
+                {zip: "8840", name: "8840 Einsiedeln"},
+            
+                {zip: "8852", name: "8852 Altendorf"},
+            
+                {zip: "8853", name: "8853 Lachen SZ"},
+            
+                {zip: "8854", name: "8854 Siebnen"},
+            
+                {zip: "8863", name: "8863 Buttikon SZ"},
+            
+                {zip: "8865", name: "8865 Bilten"},
+            
+                {zip: "8867", name: "8867 Niederurnen"},
+            
+                {zip: "8879", name: "8879 Pizolpark (Mels)"},
+            
+                {zip: "8880", name: "8880 Walenstadt"},
+            
+                {zip: "8902", name: "8902 Urdorf"},
+            
+                {zip: "8903", name: "8903 Birmensdorf ZH"},
+            
+                {zip: "8910", name: "8910 Affoltern am Albis"},
+            
+                {zip: "8926", name: "8926 Kappel am Albis"},
+            
+                {zip: "8952", name: "8952 Schlieren"},
+            
+                {zip: "8953", name: "8953 Dietikon"},
+            
+                {zip: "8954", name: "8954 Geroldswil"},
+            
+                {zip: "8957", name: "8957 Spreitenbach"},
+            
+                {zip: "8965", name: "8965 Berikon"},
+            
+                {zip: "9000", name: "9000 St. Gallen"},
+            
+                {zip: "9006", name: "9006 St. Gallen"},
+            
+                {zip: "9008", name: "9008 St. Gallen"},
+            
+                {zip: "9013", name: "9013 St. Gallen"},
+            
+                {zip: "9014", name: "9014 St. Gallen"},
+            
+                {zip: "9016", name: "9016 St. Gallen"},
+            
+                {zip: "9030", name: "9030 Abtwil SG"},
+            
+                {zip: "9050", name: "9050 Appenzell"},
+            
+                {zip: "9055", name: "9055 Bühler"},
+            
+                {zip: "9100", name: "9100 Herisau"},
+            
+                {zip: "9200", name: "9200 Gossau SG"},
+            
+                {zip: "9230", name: "9230 Flawil"},
+            
+                {zip: "9240", name: "9240 Uzwil"},
+            
+                {zip: "9244", name: "9244 Niederuzwil"},
+            
+                {zip: "9303", name: "9303 Wittenbach"},
+            
+                {zip: "9320", name: "9320 Arbon"},
+            
+                {zip: "9326", name: "9326 Horn"},
+            
+                {zip: "9400", name: "9400 Rorschach"},
+            
+                {zip: "9404", name: "9404 Rorschacherberg"},
+            
+                {zip: "9411", name: "9411 Reute AR"},
+            
+                {zip: "9425", name: "9425 Thal"},
+            
+                {zip: "9430", name: "9430 St. Margrethen SG"},
+            
+                {zip: "9434", name: "9434 Au SG"},
+            
+                {zip: "9443", name: "9443 Widnau"},
+            
+                {zip: "9450", name: "9450 Altstätten SG"},
+            
+                {zip: "9463", name: "9463 Oberriet SG"},
+            
+                {zip: "9469", name: "9469 Haag (Rheintal)"},
+            
+                {zip: "9470", name: "9470 Buchs SG"},
+            
+                {zip: "9472", name: "9472 Grabs"},
+            
+                {zip: "9477", name: "9477 Trübbach"},
+            
+                {zip: "9492", name: "9492 Eschen"},
+            
+                {zip: "9494", name: "9494 Schaan"},
+            
+                {zip: "9495", name: "9495 Triesen"},
+            
+                {zip: "9497", name: "9497 Triesenberg"},
+            
+                {zip: "9500", name: "9500 Wil SG"},
+            
+                {zip: "9506", name: "9506 Lommis"},
+            
+                {zip: "9512", name: "9512 Rossrüti"},
+            
+                {zip: "9524", name: "9524 Zuzwil SG"},
+            
+                {zip: "9533", name: "9533 Kirchberg b. WIL SG"},
+            
+                {zip: "9535", name: "9535 Wilen b. Wil"},
+            
+                {zip: "9542", name: "9542 Münchwilen TG"},
+            
+                {zip: "9602", name: "9602 Bazenheid"},
+            
+                {zip: "9606", name: "9606 Bütschwil"},
+            
+                {zip: "9630", name: "9630 Wattwil"},
+            
+        
+        ""
+    ];
+
+    function savelocation(position) {
+        if(position.coords.longitude && position.coords.latitude) {
+            setVisitorLocation(position.coords.longitude, position.coords.latitude);
+            cs2('#long').val(position.coords.longitude);
+            cs2('#lat').val(position.coords.latitude);
+            location_on = 1;
+            cs2('#zipcity').attr('placeholder', 'yourlocation');
+        }
+    }
+
+    function bindTooltip(){
+        $('[data-toggle="tooltip"].openingtime-tooltip').tooltip({
+            template: '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+        });
+
+        $('.openingtime-tooltip').on('click',function() {
+
+            let isActive = $(this).hasClass('active');
+
+            $('.openingtime-tooltip').removeClass('active');
+            $('.openingtime-tooltip').tooltip('hide');
+
+            if(isActive) {
+                //console.log('.service-tooltip toggle disable all');
+            } else {
+                $(this).addClass('active');
+                window.setTimeout(function(){
+                    $('.openingtime-tooltip.active').tooltip('show')
+                },200);
+            }
+
+        });
+    }
+
+    showlist = function(params) {
+        var url = "index.php?id=" + $_pageId + "&ceuid=" + $_ceId + "&type=" + $_typenum + "&L=" + $_sys_language_uid + "&tx_dennerstores_storelocator[action]=list";
+        var data = cs2('#locatorform').serialize();
+        var questionnairePid = "{questionnairePid}";
+        if(questionnairePid > 1) url += '&tx_dennerstores_storelocator[questionnairePid]=' + questionnairePid;
+        cs2('.terminator').click();
+        if(cs2.fancybox) cs2.fancybox.showLoading();
+        storelist = cs2.ajax({
+            url: url+(typeof params != 'undefined'?params:''),
+            type: "POST",
+            cache: false,
+            async: true,
+            data: data,
+            success: function (result) {
+                if(result) {
+                    cs2(result).appendTo('#storeslist');
+                    //cs2('#storeslist').html(result);
+                }
+            },
+            complete: function (result) {
+                updateMap(null,1);
+                cs2('#map-canvas').css('visibility','visible');
+                if(cs2(window).width() < 768) {
+                    cs2('html, body').animate({
+                        scrollTop: cs2("#map-pointer").offset().top - 60
+                    }, 250);
+                }
+                bindTooltip();
+                //cs2.fancybox.hideLoading();
+                //cs2('.terminator').click();
+                //cs2.fancybox.showLoading();
+            },
+            error: function () {
+                //cs2.fancybox.hideLoading();
+            }
+        })
+    }
+
+    //cs2(window).on('load', function() {
+
+        cs2('.filterlisttxt').text(showall_label);
+
+        $('#zipcity.autocomplete').typeahead({
+            minLength: 3,
+            source: zipcityData,
+            afterSelect: function(zipcity) {
+                $('#zipcity').val(zipcity.name);
+                $('#zipcity').removeClass('active');
+                cs2('#locatorform').submit();
+            }
+        }).on('input', function() {
+            setTimeout(function() {
+                if($(".typeahead.dropdown-menu").is(":visible")){
+                    $('#zipcity').addClass('active');
+                } else{
+                    $('#zipcity').removeClass('active');
+                }
+            }, 50);
+        });
+
+        cs2('#locatorform').on('submit',function(){
+            cs2('#storeslist').empty();
+            if(cs2('#zipcity').val() != '') {
+                cs2('#autodetect').val(0);
+                geocodeAddress();
+            } else {
+                deleteOverlays();
+                if(!location_on) {
+                    cs2('#long').val('');
+                    cs2('#lat').val('');
+                }
+                showlist();
+            }
+            return false;
+        });
+
+        //google.maps.event.addDomListener(window, 'load', initialize('map-canvas'));
+
+        cs2('.openfilter').click(function(){
+            cs2('.addfilter').removeClass('open').addClass('open');
+        });
+
+        cs2('.terminator').click(function(){
+            var sel = cs2('input:checked');
+
+            if(sel.length > 0) {
+                var mergedfilter_arr = [];
+
+                cs2.each(sel, function( key, checkbox ) {
+                    mergedfilter_arr.push (cs2(checkbox).next('span').text());
+                });
+
+                var mergedfilter = mergedfilter_arr.join(', ');
+
+                cs2('.filterlisttxt').text(mergedfilter);
+            } else {
+                cs2('.filterlisttxt').text(showall_label);
+            }
+
+            cs2('.addfilter').removeClass('open');
+        });
+
+        cs2(document).on('click', '.showlocation', function(e){
+            e.preventDefault();
+            cs2('#zipcity').val('');
+            if(getVisitorLocation() == '') {
+                if(Modernizr.geolocation === true) {
+                    //if (cs2('#long').val() != 0){
+                    cs2('#zipcity').attr('placeholder', 'yourlocation');
+                    //} else {
+                    navigator.geolocation.getCurrentPosition(savelocation);
+                    //}
+                }
+            } else {
+                var position = getVisitorLocation().split(',');
+                cs2('#long').val(position[0]);
+                cs2('#lat').val(position[1]);
+                location_on = 1;
+                cs2('#zipcity').attr('placeholder', 'yourlocation');
+            }
+            cs2('#autodetect').val(1);
+            cs2('#locatorform').submit();
+        });
+
+        if(parseInt(cs2('.countNumber').text()) == 0){
+            cs2('.resultcount').hide();
+        }
+
+        if(cs2('#locatorform input:checked').length > 0) {
+            google.maps.event.addListenerOnce(map, 'idle', function(){
+                window.setTimeout( function() {
+                    cs2.fancybox.showLoading();
+                    showlist();
+                }, 1000 );
+            });
+        }
+
+        if(cs2('input#long').val() != '' && cs2('input#lat').val() != '') {
+            if(cs2('input#zipcity').val() == '') {
+                cs2('#zipcity').attr('placeholder', 'yourlocation');
+                google.maps.event.addListenerOnce(map, 'idle', function(){
+                    window.setTimeout( function() {
+                        cs2.fancybox.showLoading();
+                        showlist();
+                    }, 1000 );
+                });
+            }
+        }
+
+        if(cs2('input#zipcity').val() != '' && google) {
+            google.maps.event.addListenerOnce(map, 'idle', function(){
+                window.setTimeout( function() {
+                    cs2.fancybox.showLoading();
+                    //showlist();
+                    cs2('#locatorform').submit();
+                }, 1000 );
+            });
+        }
+
+        if (!$_zipcity && ($_ceAction == 'renovations' || $_ceAction == 'newOpenings' || $_ceAction == 'renovationsWithoutMap' || $_ceAction == 'newOpeningsWithoutMap')) {
+            cs2('#locatorform').submit();
+        }
+    //})
+})
+
+require(['async!https://maps.googleapis.com/maps/api/js?key=AIzaSyBi5zT578BHufgDS0mZSZ9ND-E9TVz5u-A'],function(){
+    initialize('map-canvas');
+});
+

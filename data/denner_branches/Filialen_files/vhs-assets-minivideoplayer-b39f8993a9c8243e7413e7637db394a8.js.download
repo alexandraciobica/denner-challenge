@@ -1,0 +1,112 @@
+require(['jquery'],function(jQuery){
+    var $loadVideosUrl = "index.php?id=381&L=0&type=3754&tx_cs2minivideoplayer[controller]=Player&tx_cs2minivideoplayer[action]=load";
+    var $closePlayerUrl = "index.php?id=381&L=0&type=3754&tx_cs2minivideoplayer[controller]=Player&tx_cs2minivideoplayer[action]=close";
+    var $videoWidthDivider = 1;
+    var $totalVideos = 0;
+    var $actualVideo = 0;
+
+    function changeVideoElementPosition() {
+        var $right = (jQuery('#maincontainer').width() - jQuery('.container-fluid header').width())/2;
+        var $videoWidth = jQuery('#video').width();
+        var $maxRight = jQuery('.close-minivideoplayer').width()/2;
+        if ($right > $videoWidth/$videoWidthDivider + $maxRight) {
+            $right = $right - ($videoWidth/$videoWidthDivider) ;
+        } else if ($right > $maxRight) {
+            $right = $maxRight;
+        }
+        jQuery('.tx-cs2minivideoplayer').css('width', $videoWidth);
+        jQuery('.tx-cs2minivideoplayer').css('right', $right);
+        jQuery('.tx-cs2minivideoplayer .close-minivideoplayer').css('right', $maxRight - $videoWidth + 32);
+    }
+
+    jQuery('.close-minivideoplayer').on('click', function(e) {
+        jQuery('.tx-cs2minivideoplayer').remove();
+        jQuery.ajax({
+            url: $closePlayerUrl,
+            type: "GET",
+            cache: false,
+            async: true
+        });
+        setCookie("closedMiniVideo", true, 1);
+    });
+
+    jQuery(document).ready(function() {
+        if (getCookie("closedMiniVideo") != "true" && jQuery("#video-mobile-check").is(":visible")) {
+            jQuery.ajax({
+                url: $loadVideosUrl,
+                type: "GET",
+                cache: false,
+                async: true,
+                dataType: "json",
+                success: function (data) {
+                    if (data.count) {
+                        $totalVideos = data.count;
+                        for ($i = 0; $i < data.count; $i++) {
+                            var source = document.createElement('source');
+                            source.src = data.videos[$i];
+                            video.appendChild(source);
+                        }
+                        changeVideoElementPosition();
+                        jQuery('.tx-cs2minivideoplayer').removeClass('hide');
+                    }
+                }
+            });
+            jQuery(window).resize(function () {
+                changeVideoElementPosition();
+            });
+        }
+    });
+
+    video.addEventListener('ended', function (event) {
+        $actualVideo++;
+        if ($actualVideo >= $totalVideos) {
+            $actualVideo = 0;
+        }
+        event.srcElement.src = jQuery(event.srcElement.children[$actualVideo]).attr('src');
+        event.srcElement.load();
+        event.srcElement.play();
+    });
+
+    video.addEventListener('loadeddata', function(event) {
+        try {
+            if(video.readyState >= 2) {
+                //					video.requestPictureInPicture();
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    });
+
+    video.addEventListener('ended', function(event) {
+        try {
+            //				document.exitPictureInPicture();
+        } catch (error) {
+            console.log(error);
+        }
+    });
+
+    function setCookie(cname,cvalue,exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+})
+
