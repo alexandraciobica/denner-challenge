@@ -1,0 +1,73 @@
+require(['jquery','bootstrap'],function(cs2){
+    cs2(document).on('click','.newlist',function(){cs2(this).select()});
+    cs2(document).ready(function(){
+
+        var text_popoverfooter_text = "Neue Einkaufsliste erstellen";
+        var text_newListName = "Einkaufsliste ";
+        var text_popover_send2 = "Speichern";
+        var text_mlogin_label_sl = 'Oder speichern Sie Ihre Einkaufsliste mit Ihrem Migros-Login.';
+        var text_mlogin_button = 'Anmelden';
+        cs2("a[rel=popoverfooter]").popover({
+            html: !0,
+            placement: "top",
+            container: "body",
+            trigger: "click",
+            sanitize: false,
+            template: '<div role="tooltip" class="tooltip">' +
+                '	<div class="arrow"></div>' +
+                '	<div class="tooltip-inner">' +
+                '		<form action="/de/einkaufsliste/" method="post" data-parsley-validate="1" class="shopinglistformnew">' +
+                '			<div class="row">' +
+                '				<div class="col-xs-12">' + text_popoverfooter_text + '</div>' +
+                '				<div class="col-xs-12 col-md-8">' +
+                '					<input type="text" data-parsley-required="1" value="' + text_newListName + '" class="newlist form-control inputsmall" name="tx_dennerarticles_shoppinglists[new]">' +
+                '				</div>' +
+                '				<div class="col-xs-12 col-md-4 mlogin-profile-div-x">' +
+                '					<input class="btn btn-block btn-denner btn-red" type="submit" value="' + text_popover_send2 + '"/>' +
+                '				</div>' +
+                '				<div class="col-12 mlogin-button mlogin-button-div text-center hide mt-3">' +
+                '					<p>' + text_mlogin_label_sl + '</p>' +
+                '					<a class="mloginButton shoppinglist" data-target="#addtolist-modal" href="mlogin_redirect.php?login=1">' +
+                '						<div class="mlogin-button-wrap">' +
+                '							<div class="mlogin-button-logo">' +
+                '								<svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '									<path d="M10.8602 12V5.07135L7.82085 12H6.13128L3.13983 5.07135V12H0V0H4.20718L7.07897 6.77427L10.1183 0H14V12H10.8602Z" fill="#FF6600"/>' +
+                '								</svg>' +
+                '							</div>' +
+                '							<div class="mlogin-button-seperator"></div>' +
+                '							<div class="mlogin-button-text">' + text_mlogin_button + '</div>' +
+                '						</div>' +
+                '					</a>' +
+                '				</div>' +
+                '			</div>' +
+                '		</form>' +
+                '	</div>' +
+                '</div>'
+        });
+
+        var text_neueeinkaufliste_text = "Einkaufsliste";
+
+        cs2("a[rel=popoverfooter]").on('shown.bs.popover', function () {
+            if ($profileData.userinfo) {
+                jQuery('.mlogin-button-div').addClass('hide');
+                jQuery('.mlogin-profile-div').removeClass('hide');
+            } else {
+                jQuery('.mlogin-profile-div').addClass('hide');
+                cs2('[id^=popover]').find('.mloginButton').attr('data-target', '#popover-' + cs2(this).data('uid'));
+                jQuery('.mlogin-button-div').removeClass('hide');
+            }
+            form = cs2('[id^=popover]').find('form');
+            if(form.length) {
+                cs2('[id^=popover]').find('form').parsley();
+            }
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1;
+            var yyyy = today.getFullYear();
+            var fulldate = dd+'.'+mm+'.'+yyyy;
+            cs2('[id^=popover]').find('.newlist').val(''+text_neueeinkaufliste_text+' '+fulldate+'').click();
+        });
+    })
+
+})
+
