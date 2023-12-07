@@ -1,0 +1,100 @@
+,QuarLang,SteuerTarifLang,StichtagDatJahr,QuarSort,QuarCd,SteuerTarifSort,SteuerTarifCd,SteuerVermoegen_p50,SteuerVermoegen_p25,SteuerVermoegen_p75
+0,Affoltern,Single-parent,2020.0,111.0,111.0,2.0,2.0,4.0,0.0,63.5
+1,Affoltern,Basic single,2020.0,111.0,111.0,0.0,0.0,20.0,0.0,119.0
+2,Affoltern,Married person,2020.0,111.0,111.0,1.0,1.0,93.0,4.0,334.0
+3,Albisrieden,Single-parent,2020.0,91.0,91.0,2.0,2.0,49.0,3.0,198.0
+4,Albisrieden,Basic single,2020.0,91.0,91.0,0.0,0.0,45.0,4.0,184.0
+5,Albisrieden,Married person,2020.0,91.0,91.0,1.0,1.0,188.0,42.0,529.0
+6,Alt-Wiedikon,Single-parent,2020.0,31.0,31.0,2.0,2.0,82.0,10.0,296.0
+7,Alt-Wiedikon,Basic single,2020.0,31.0,31.0,0.0,0.0,55.0,6.0,216.0
+8,Alt-Wiedikon,Married person,2020.0,31.0,31.0,1.0,1.0,238.0,40.0,719.0
+9,Altstetten,Single-parent,2020.0,92.0,92.0,2.0,2.0,9.0,0.0,88.0
+10,Altstetten,Basic single,2020.0,92.0,92.0,0.0,0.0,27.0,0.0,129.0
+11,Altstetten,Married person,2020.0,92.0,92.0,1.0,1.0,84.0,3.0,312.0
+12,City,Basic single,2020.0,14.0,14.0,0.0,0.0,22.0,1.0,164.5
+13,City,Married person,2020.0,14.0,14.0,1.0,1.0,262.0,55.0,774.0
+14,Enge,Single-parent,2020.0,24.0,24.0,2.0,2.0,123.0,21.0,427.0
+15,Enge,Basic single,2020.0,24.0,24.0,0.0,0.0,84.0,12.0,366.0
+16,Enge,Married person,2020.0,24.0,24.0,1.0,1.0,486.0,125.0,1388.0
+17,Escher Wyss,Single-parent,2020.0,52.0,52.0,2.0,2.0,122.5,18.0,442.0
+18,Escher Wyss,Basic single,2020.0,52.0,52.0,0.0,0.0,68.0,8.0,251.0
+19,Escher Wyss,Married person,2020.0,52.0,52.0,1.0,1.0,367.0,134.0,1022.0
+20,Fluntern,Single-parent,2020.0,71.0,71.0,2.0,2.0,179.0,30.0,763.0
+21,Fluntern,Basic single,2020.0,71.0,71.0,0.0,0.0,115.0,14.0,576.0
+22,Fluntern,Married person,2020.0,71.0,71.0,1.0,1.0,815.0,216.0,2636.0
+23,Friesenberg,Single-parent,2020.0,33.0,33.0,2.0,2.0,31.0,1.0,132.0
+24,Friesenberg,Basic single,2020.0,33.0,33.0,0.0,0.0,24.0,0.0,120.0
+25,Friesenberg,Married person,2020.0,33.0,33.0,1.0,1.0,124.0,16.0,379.0
+26,Gewerbeschule,Single-parent,2020.0,51.0,51.0,2.0,2.0,55.0,3.0,208.0
+27,Gewerbeschule,Basic single,2020.0,51.0,51.0,0.0,0.0,33.0,1.0,145.0
+28,Gewerbeschule,Married person,2020.0,51.0,51.0,1.0,1.0,117.0,4.0,422.0
+29,Hard,Single-parent,2020.0,44.0,44.0,2.0,2.0,15.0,0.0,98.0
+30,Hard,Basic single,2020.0,44.0,44.0,0.0,0.0,18.0,0.0,92.0
+31,Hard,Married person,2020.0,44.0,44.0,1.0,1.0,40.0,0.0,177.0
+32,Hirslanden,Single-parent,2020.0,73.0,73.0,2.0,2.0,88.0,11.0,350.0
+33,Hirslanden,Basic single,2020.0,73.0,73.0,0.0,0.0,74.0,9.0,320.0
+34,Hirslanden,Married person,2020.0,73.0,73.0,1.0,1.0,508.0,149.0,1590.0
+35,Hirzenbach,Single-parent,2020.0,123.0,123.0,2.0,2.0,3.0,0.0,32.0
+36,Hirzenbach,Basic single,2020.0,123.0,123.0,0.0,0.0,14.0,0.0,79.0
+37,Hirzenbach,Married person,2020.0,123.0,123.0,1.0,1.0,45.5,1.0,191.0
+38,Hochschulen,Basic single,2020.0,12.0,12.0,0.0,0.0,62.0,4.0,326.0
+39,Hochschulen,Married person,2020.0,12.0,12.0,1.0,1.0,774.0,80.0,1639.0
+40,Hottingen,Single-parent,2020.0,72.0,72.0,2.0,2.0,197.0,50.0,609.0
+41,Hottingen,Basic single,2020.0,72.0,72.0,0.0,0.0,97.0,12.0,473.0
+42,Hottingen,Married person,2020.0,72.0,72.0,1.0,1.0,644.0,186.0,2019.0
+43,Höngg,Single-parent,2020.0,101.0,101.0,2.0,2.0,64.5,3.0,271.0
+44,Höngg,Basic single,2020.0,101.0,101.0,0.0,0.0,63.0,8.0,293.0
+45,Höngg,Married person,2020.0,101.0,101.0,1.0,1.0,299.0,79.0,837.0
+46,Langstrasse,Single-parent,2020.0,42.0,42.0,2.0,2.0,73.0,6.0,222.0
+47,Langstrasse,Basic single,2020.0,42.0,42.0,0.0,0.0,29.0,0.0,132.0
+48,Langstrasse,Married person,2020.0,42.0,42.0,1.0,1.0,132.5,10.0,470.5
+49,Leimbach,Single-parent,2020.0,23.0,23.0,2.0,2.0,15.0,0.0,105.0
+50,Leimbach,Basic single,2020.0,23.0,23.0,0.0,0.0,27.0,0.0,159.0
+51,Leimbach,Married person,2020.0,23.0,23.0,1.0,1.0,160.0,14.0,480.0
+52,Lindenhof,Basic single,2020.0,13.0,13.0,0.0,0.0,85.0,8.0,461.0
+53,Lindenhof,Married person,2020.0,13.0,13.0,1.0,1.0,663.5,222.0,1988.0
+54,Mühlebach,Single-parent,2020.0,82.0,82.0,2.0,2.0,122.0,4.0,444.0
+55,Mühlebach,Basic single,2020.0,82.0,82.0,0.0,0.0,79.0,8.0,326.0
+56,Mühlebach,Married person,2020.0,82.0,82.0,1.0,1.0,485.0,133.0,1361.0
+57,Oberstrass,Single-parent,2020.0,63.0,63.0,2.0,2.0,136.0,30.0,476.5
+58,Oberstrass,Basic single,2020.0,63.0,63.0,0.0,0.0,83.0,12.0,356.0
+59,Oberstrass,Married person,2020.0,63.0,63.0,1.0,1.0,626.0,200.0,1731.0
+60,Oerlikon,Single-parent,2020.0,115.0,115.0,2.0,2.0,61.5,1.0,258.5
+61,Oerlikon,Basic single,2020.0,115.0,115.0,0.0,0.0,43.0,3.0,180.0
+62,Oerlikon,Married person,2020.0,115.0,115.0,1.0,1.0,216.0,38.0,639.0
+63,Rathaus,Single-parent,2020.0,11.0,11.0,2.0,2.0,110.0,9.5,563.0
+64,Rathaus,Basic single,2020.0,11.0,11.0,0.0,0.0,57.0,3.0,319.0
+65,Rathaus,Married person,2020.0,11.0,11.0,1.0,1.0,426.5,96.0,1530.0
+66,Saatlen,Single-parent,2020.0,121.0,121.0,2.0,2.0,6.0,0.0,52.0
+67,Saatlen,Basic single,2020.0,121.0,121.0,0.0,0.0,14.0,0.0,77.0
+68,Saatlen,Married person,2020.0,121.0,121.0,1.0,1.0,56.0,1.0,258.0
+69,Schwamendingen-Mitte,Single-parent,2020.0,122.0,122.0,2.0,2.0,1.0,0.0,21.0
+70,Schwamendingen-Mitte,Basic single,2020.0,122.0,122.0,0.0,0.0,15.0,0.0,97.0
+71,Schwamendingen-Mitte,Married person,2020.0,122.0,122.0,1.0,1.0,43.5,0.0,276.0
+72,Seebach,Single-parent,2020.0,119.0,119.0,2.0,2.0,4.0,0.0,69.0
+73,Seebach,Basic single,2020.0,119.0,119.0,0.0,0.0,19.0,0.0,112.0
+74,Seebach,Married person,2020.0,119.0,119.0,1.0,1.0,83.0,2.0,332.0
+75,Seefeld,Single-parent,2020.0,81.0,81.0,2.0,2.0,153.5,10.5,433.0
+76,Seefeld,Basic single,2020.0,81.0,81.0,0.0,0.0,93.5,13.0,367.0
+77,Seefeld,Married person,2020.0,81.0,81.0,1.0,1.0,415.0,114.0,1196.0
+78,Sihlfeld,Single-parent,2020.0,34.0,34.0,2.0,2.0,43.0,0.0,178.0
+79,Sihlfeld,Basic single,2020.0,34.0,34.0,0.0,0.0,36.0,2.0,152.0
+80,Sihlfeld,Married person,2020.0,34.0,34.0,1.0,1.0,108.0,9.0,396.0
+81,Unterstrass,Single-parent,2020.0,61.0,61.0,2.0,2.0,72.0,6.0,245.0
+82,Unterstrass,Basic single,2020.0,61.0,61.0,0.0,0.0,51.0,5.0,206.0
+83,Unterstrass,Married person,2020.0,61.0,61.0,1.0,1.0,250.5,59.0,700.0
+84,Weinegg,Single-parent,2020.0,83.0,83.0,2.0,2.0,135.0,15.0,539.0
+85,Weinegg,Basic single,2020.0,83.0,83.0,0.0,0.0,57.0,5.0,280.0
+86,Weinegg,Married person,2020.0,83.0,83.0,1.0,1.0,414.5,96.5,1391.0
+87,Werd,Single-parent,2020.0,41.0,41.0,2.0,2.0,87.5,8.5,222.0
+88,Werd,Basic single,2020.0,41.0,41.0,0.0,0.0,46.0,4.0,182.0
+89,Werd,Married person,2020.0,41.0,41.0,1.0,1.0,184.0,15.0,535.0
+90,Wipkingen,Single-parent,2020.0,102.0,102.0,2.0,2.0,73.0,10.0,240.0
+91,Wipkingen,Basic single,2020.0,102.0,102.0,0.0,0.0,50.0,6.0,182.0
+92,Wipkingen,Married person,2020.0,102.0,102.0,1.0,1.0,212.0,50.0,626.0
+93,Witikon,Single-parent,2020.0,74.0,74.0,2.0,2.0,69.0,7.0,290.0
+94,Witikon,Basic single,2020.0,74.0,74.0,0.0,0.0,81.0,9.0,444.0
+95,Witikon,Married person,2020.0,74.0,74.0,1.0,1.0,405.5,96.0,1292.0
+96,Wollishofen,Single-parent,2020.0,21.0,21.0,2.0,2.0,45.0,2.0,218.0
+97,Wollishofen,Basic single,2020.0,21.0,21.0,0.0,0.0,49.0,5.0,216.0
+98,Wollishofen,Married person,2020.0,21.0,21.0,1.0,1.0,232.0,52.5,686.0
