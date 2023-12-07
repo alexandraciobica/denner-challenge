@@ -1,0 +1,641 @@
+,name,address
+0,Migros,Wengistrasse 7 8004 Zürich
+1,Migros,Sihlpassage 8004 Zürich
+2,Migros,Zollstrasse 6 8005 Zürich
+3,Migros,Löwenstrasse 31 - 35 8001 Zürich
+4,Migros,Limmatstrasse 152 8005 Zürich
+5,Migros,Hauptbahnhof 8001 Zürich
+6,Migros,Shop Ville 8001 Zürich
+7,Migros,Birmensdorferstrasse 140 8003 Zürich
+8,Migros,Stockerstrasse 47 8002 Zürich
+9,Migros,Badenerstrasse 376 8004 Zürich
+10,Migros,Hardturmstrasse 11 8005 Zürich
+11,Migros,Tessinerplatz 10 8002 Zürich
+12,Migros,Birmensdorferstrasse 320 8055 Zürich
+13,Migros,Scheffelstrasse 3 8037 Zürich
+14,Migros,Schaffhauserstrasse 75 8057 Zürich
+15,Migros,Winterthurerstrasse 2 - 4 8006 Zürich
+16,Migros,Falkenstrasse 19 - 21 8008 Zürich
+17,Migros,Giesshübelstrasse 65 8045 Zürich
+18,Migros,Toblerstrasse 73 8044 Zürich
+19,Migros,Kreuzplatz 20 8008 Zürich
+20,Migros,Seefeldstrasse 111 - 113 8008 Zürich
+21,Migros,Albisriederstrasse 365 8047 Zürich
+22,Migros,Altstetterstrasse 145 8048 Zürich
+23,Migros,Hohlstrasse 600 8048 Zürich
+24,Migros,Regensdorferstrasse 20 8049 Zürich
+25,Migros,Hofwiesenstrasse 350 - 354 8050 Zürich
+26,Migros,Etzelstrasse 3 8038 Zürich
+27,Migros,Forchstrasse 260 8008 Zürich
+28,Migros,Winterthurerstrasse 524 8051 Zürich
+29,Migros,Leimbachstrasse 23 8041 Zürich
+30,Migros,Schaffhauserstrasse 470 8052 Zürich
+31,Migros,Jonas-Furrer-Strasse 21 8046 Zürich
+32,Migros,Witikonerstrasse 293 8053 Zürich
+33,Migros,Zürcherstrasse 8 8142 Uitikon Waldegg
+34,Migros,Thurgauerstrasse 106 8152 Opfikon
+35,Migros,Am Stadtrand 5 8600 Dübendorf
+36,Migros,Rotfluhstrasse 100 8702 Zollikon
+37,Migros,Im Zentrum 2 8102 Oberengstringen
+38,Migros,Neue Winterthurerstrasse 99 8304 Wallisellen
+39,Migros,Bahnhofstrasse 30 8304 Wallisellen
+40,Migros,Güterstrasse 5 8952 Schlieren
+41,Migros,Wallisellerstrasse 8 8152 Glattbrugg
+42,Migros,Badenerstrasse 57 8952 Schlieren
+43,Migros,Unterdorfstrasse 7 8600 Dübendorf
+44,Migros,Zürcherstrasse 15 8903 Birmensdorf Zh
+45,Migros,Zentrum 1 8105 Regensdorf
+46,Migros,Rietbachstrasse 14 8952 Schlieren
+47,Migros,Albisstrasse 10 8134 Adliswil
+48,Migros,Zürichstrasse 149 8700 Küsnacht Zh
+49,Migros,Birmensdorferstrasse 87 8902 Urdorf
+50,Migros,Hofwisenstrasse 40a 8153 Rümlang
+51,Migros,Dorfstrasse 17 8126 Zumikon
+52,Migros,Pappelstrasse 2 8305 Dietlikon
+53,Migros,Flughafen Zürich Ag 8058 Zürich - Flughafen
+54,Migros,Unterdorfstrasse 2 8117 Fällanden
+55,Migros,Zürcherstrasse 4 8803 Rüschlikon
+56,Migros,Kirchgasse 5 8302 Kloten
+57,Migros,Zürichstrasse 108 8123 Ebmatingen
+58,Migros,Bahnhofstrasse 42 8703 Erlenbach Zh
+59,Migros,Hintere Grundstrasse 2 8135 Langnau am Albis
+60,Migros,Alte Landstrasse 130 8800 Thalwil
+61,Migros,Überlandstrasse 22 8953 Dietikon
+62,Migros,Löwenstrasse 28 8953 Dietikon
+63,Migros,Baltenswilerstrasse 5a 8303 Bassersdorf
+64,Migros,Lägernstrasse 6 8154 Oberglatt Zh
+65,Migros,Riedstrasse 3 8953 Dietikon
+66,Migros,Meierwis 8606 Greifensee
+67,Migros,Im Zentrum 18 8604 Volketswil
+68,Migros,Dorfstrasse 20 8155 Niederhasli
+69,Migros,Bellikerstrasse 13 8965 Berikon
+70,Migros,Ruchwiesenstrasse 2 8157 Dielsdorf
+71,Migros,Oberdorfstrasse 4 8910 Affoltern am Albis
+72,Migros,Shoppi Tivoli 8957 Spreitenbach
+73,Migros,Shopping-Center 8957 Spreitenbach
+74,Migros,Märtplatz 5 8307 Effretikon
+75,Migros,Zufikerstrasse 2 5620 Bremgarten Ag
+76,Migros,Alte Landstrasse 24 8810 Horgen
+77,Migros,Zürichstrasse 20 8610 Uster
+78,Migros,Feldstrasse 85 8180 Bülach
+79,Migros,Gewerbestrasse 2 - 10 8132 Egg
+80,Migros,Rosengartenstrasse 10 8706 Meilen
+81,Migros,Bülacherstrasse 17 8424 Embrach
+82,Migros,Bahnhofstrasse 28 8180 Bülach
+83,Migros,Ziegeleiplatz 2 8406 Dättnau
+84,Migros,Zürcherstrasse 113 5432 Neuenhof
+85,Migros,Grundstrasse 4 8320 Fehraltorf
+86,Migros,Weiacherstrasse 1 8422 Pfungen
+87,Migros,Landstrasse 69 5430 Wettingen
+88,Migros,Kirchfeldstrasse 8 5630 Muri Ag
+89,Migros,Zürcherstrasse 102 8406 Winterthur
+90,Migros,Alte Landstrasse 262 8708 Männedorf
+91,Migros,Badenerstrasse 7d 5442 Fislisbach
+92,Migros,Im Zentrum 3 8625 Gossau Zh
+93,Migros,Turmstrasse 9 8330 Pfäffikon Zh
+94,Migros,Lindenplatz 1 8408 Winterthur
+95,Migros,Bahnhofstrasse 7 5610 Wohlen Ag
+96,Migros,Oberdorfstrasse 27 - 31 8820 Wädenswil
+97,Migros,Bahnhofstrasse 40 / 42 5400 Baden
+98,Migros,Strickerstrasse 3 8400 Winterthur
+99,Migros,Wülflingerstrasse 71 8400 Winterthur
+100,Migros,Lenzburgerstrasse 50 5507 Mellingen
+101,Migros,Tösstalstrasse 24 8483 Kollbrunn
+102,Migros,Bahnhofstrasse 5 6340 Baar
+103,Migros,Bahnhofstrasse 2 6312 Steinhausen
+104,Migros,Stadthausstrasse 31 8400 Winterthur
+105,Migros,Pflanzschulstrasse 9 8400 Winterthur
+106,Migros,Hinterbergstrasse 40 6312 Steinhausen
+107,Migros,Schaffhauserstrasse 154 8400 Winterthur
+108,Migros,Bahnhofstrasse 151 8620 Wetzikon Zh
+109,Migros,Goethestrasse 18 8712 Stäfa
+110,Migros,Hinterdorfstrasse 40 8405 Winterthur
+111,Migros,Hofstrasse 47 8620 Wetzikon Zh
+112,Migros,Schulstrasse 2 5415 Nussbaumen b.Baden
+113,Migros,Schulhausstrasse 2 5612 Villmergen
+114,Migros,Hertizentrum 10 6300 Zug
+115,Migros,Bauelenzelgstrasse 16 8193 Eglisau
+116,Migros,Zugerstrasse 15 / 17 6330 Cham
+117,Migros,Jakob Stutz-Strasse 75 8335 Hittnau
+118,Migros,Guggenbühlstrasse 1 8404 Winterthur
+119,Migros,Baarerstrasse 22 6300 Zug
+120,Migros,Rütistrasse 16 8634 Hombrechtikon
+121,Migros,Hintermühlenstrasse 4 8409 Winterthur
+122,Migros,Winterthurerstrasse 5 8472 Seuzach
+123,Migros,Schützengass 4 8805 Richterswil
+124,Migros,Hintergasse 12 5615 Fahrwangen
+125,Migros,Grabenstrasse 5 6300 Zug
+126,Migros,Maihölzli 5 6331 Hünenberg
+127,Migros,Wambisterstrasse 5412 Gebenstorf
+128,Migros,Tösstalstrasse 54 8488 Turbenthal
+129,Migros,Flachsacherstrasse 17 5242 Lupfig
+130,Migros,Roosstrasse 23 8832 Wollerau
+131,Migros,Bachtelstrasse 16 8340 Hinwil
+132,Migros,Bachmattstrasse 35 5210 Windisch
+133,Migros,Heinrich - Gujerstrasse 10 8494 Bauma
+134,Migros,Bachstrasse 15 5600 Lenzburg
+135,Migros,Pfäffikonerstrasse 19 8834 Schindellegi
+136,Migros,Neumarkt 1 5200 Brugg Ag
+137,Migros,Zugerstrasse 32 6314 Unterägeri
+138,Migros,Richensee 2 6285 Hitzkirch
+139,Migros,Buonaserstrasse 1 6343 Rotkreuz
+140,Migros,Bruggerstrasse 11 c 5103 Wildegg
+141,Migros,Zürcherstrasse 4 8640 Rapperswil Sg
+142,Migros,Weinlandstrasse 4 8451 Kleinandelfingen
+143,Migros,Bandwiesstrasse 6 8630 Rüti Zh
+144,Migros,Untere Bahnhofstrasse 19 8640 Rapperswil Sg
+145,Migros,Unterdorfstrasse 21 5703 Seon
+146,Migros,Gwattstrasse 11 8808 Pfäffikon Sz
+147,Migros,St. Gallerstrasse 16 8353 Elgg
+148,Migros,Molkereistrasse 5 8645 Jona
+149,Migros,Promenadenstrasse 10 5330 Bad Zurzach
+150,Migros,Sandgasse 6 5734 Reinach Ag
+151,Migros,Hauptstrasse 5 6280 Hochdorf
+152,Migros,Hauptstrasse 17 5312 Döttingen
+153,Migros,Sagiweg 8 5737 Menziken
+154,Migros,Bahnhofstrasse 2 8355 Aadorf
+155,Migros,Bahnhofstrasse 11b 6037 Root
+156,Migros,Bahnhofstrasse 20 8636 Wald Zh
+157,Migros,Feldstrasse 6 8853 Lachen Sz
+158,Migros,Eisenbahnstrasse 2 8840 Einsiedeln
+159,Migros,Lindenplatz 2 5722 Gränichen
+160,Migros,Bresteneggstrasse 9b 5033 Buchs Ag
+161,Migros,Siegwartstrasse 11 6403 Küssnacht am Rigi
+162,Migros,Rickenstrasse 12 8733 Eschenbach
+163,Migros,Bernstrasse Ost 52 5034 Suhr
+164,Migros,Frauenfelderstrasse 95 9548 Matzingen
+165,Migros,Ebisquare-Strasse 1 6030 Ebikon
+166,Migros,Unterdorfstrasse 6033 Buchrain
+167,Migros,Bahnhofstrasse 72 8500 Frauenfeld
+168,Migros,Zürcherstrasse 227 8500 Frauenfeld
+169,Migros,Löhningerstrasse 4 8213 Neunkirch
+170,Migros,Gääli 6 6026 Rain
+171,Migros,Langfeldstrasse 53a 8500 Frauenfeld
+172,Migros,Schaffhauserstrasse 72 8222 Beringen
+173,Migros,Bahnhofplatz 3h 5000 Aarau
+174,Migros,Zentralstrasse 16 6030 Ebikon
+175,Migros,Winterthurerstrasse 27 8370 Sirnach
+176,Migros,Igelweid 18 5000 Aarau
+177,Migros,Binzmattweg 8 5035 Unterentfelden
+178,Migros,Obgardirain 1 6043 Adligenswil
+179,Migros,Parkstrasse 25 6410 Goldau
+180,Migros,Bahnhofstrasse 56 / 58 8200 Schaffhausen
+181,Migros,Dürstlingweg 2 8203 Schaffhausen
+182,Migros,Wilerstrasse 5 9542 Münchwilen
+183,Migros,Picardiestrasse 3 5040 Schöftland
+184,Migros,Hohlenbaumstrasse 79 8200 Schaffhausen
+185,Migros,Kapfstrasse 3 6020 Emmenbrücke
+186,Migros,Zürcherstrasse 25 8730 Uznach
+187,Migros,Bahnhofstrasse 15 8253 Diessenhofen
+188,Migros,Mettenwilstrasse 11 6203 Sempach Station
+189,Migros,Seetalstrasse 50 6020 Emmenbrücke
+190,Migros,Sonnenplatz 1 6020 Emmenbrücke
+191,Migros,Würzenbachstrasse 19 6006 Luzern
+192,Migros,Kreuzbuchstrasse 53 6006 Luzern
+193,Migros,Kaltenbacherstrasse 41 8260 Stein am Rhein
+194,Migros,Friedentalstrasse 6 6004 Luzern
+195,Migros,Zentrum Rössli 5018 Erlinsbach Ag
+196,Migros,Luzernstrasse 36 6208 Oberkirch Lu
+197,Migros,Stüdliackerstrasse 4 8207 Schaffhausen
+198,Migros,Bahnhofstrasse 28 6210 Sursee
+199,Migros,C.F. Ballystrasse 14 5012 Schönenwerd
+200,Migros,Hertensteinstrasse 9 6004 Luzern
+201,Migros,Amp-Strasse 2 9552 Bronschhofen
+202,Migros,Obere Bahnhofstrasse 5 9500 Wil Sg
+203,Migros,Zentralstrasse 1 6003 Luzern
+204,Migros,Ruopigenplatz 6015 Luzern
+205,Migros,Zentralstrasse 7 6003 Luzern
+206,Migros,Bruchstrasse 18 6003 Luzern
+207,Migros,Gewerbestrasse 4 8864 Reichenburg
+208,Migros,Wilerstrasse 204 9533 Kirchberg Sg
+209,Migros,Winkelriedstrasse 58 6003 Luzern
+210,Migros,Tribschenstrasse 62 6005 Luzern
+211,Migros,Langensandstrasse 23 6005 Luzern
+212,Migros,Hauptstrasse 44 5070 Frick
+213,Migros,Wilerstrasse 17 9602 Bazenheid
+214,Migros,Landstrasse 41 9606 Bütschwil
+215,Migros,Mythen-Centerstrasse 18 6438 Ibach
+216,Migros,Luzernerstrasse 143 6014 Luzern
+217,Migros,Zihlmattweg 46 6005 Luzern
+218,Migros,Bahnhofplatz 19 6440 Brunnen
+219,Migros,Luzernerstrasse 30 6010 Kriens
+220,Migros,Am Mattenhof 2 6010 Kriens
+221,Migros,Bahnhofstrasse 19 9630 Wattwil
+222,Migros,Gemeindehausplatz 14 + 15 6048 Horw
+223,Migros,Thurstrasse 3 8555 Müllheim Dorf
+224,Migros,Biberstrasse 30 8240 Thayngen
+225,Migros,Hauptstrasse 20 4654 Lostorf
+226,Migros,Hauptstrasse 52 6260 Reiden
+227,Migros,Rüediswilerstrasse 79 6017 Ruswil
+228,Migros,Baselstrasse 7 6252 Dagmersellen
+229,Migros,Aarburgerstrasse 5 4800 Zofingen
+230,Migros,Herbergstrasse 17 9524 Zuzwil Sg
+231,Migros,Ennetbürgerstrasse 45 6374 Buochs
+232,Migros,Lindenstrasse 5 9240 Uzwil
+233,Migros,Weihermatte 7a / 7b 6102 Malters
+234,Migros,Zürichstrasse 2 4665 Oftringen
+235,Migros,Im Feldbach 1b 8266 Steckborn
+236,Migros,Kapplerstrasse 16 9642 Ebnat-Kappel
+237,Migros,Seestrasse 43 6052 Hergiswil Nw
+238,Migros,Grossmatt 1 6243 Egolzwil
+239,Migros,Louis Giroud-Strasse 20 4600 Olten
+240,Migros,Schaffhauserstrasse 61 4332 Stein Ag
+241,Migros,Solothurnerstrasse 21 4600 Olten
+242,Migros,Weststrasse 27 / 29 8570 Weinfelden
+243,Migros,Bitzistrasse 2 6370 Stans
+244,Migros,Ziegelbrückstrasse 21 8867 Niederurnen
+245,Migros,Amriswilerstrasse 12 8570 Weinfelden
+246,Migros,Neue Aarburgstrasse 20 4852 Rothrist
+247,Migros,Ettiswilerstrasse 14 6130 Willisau
+248,Migros,Magdenauerstrasse 10 9230 Flawil
+249,Migros,Entlebucherstrasse 36 6110 Wolhusen
+250,Migros,Hauptstrasse 81 9113 Degersheim
+251,Migros,Oberdorf 44 8752 Näfels
+252,Migros,Badweg 2 4460 Gelterkinden
+253,Migros,Hauptstrasse 3 8583 Sulgen
+254,Migros,Zelgmatte 2 6144 Zell Lu
+255,Migros,Fahrackerstrasse 1 4853 Murgenthal
+256,Migros,Hauptstrasse 17 4450 Sissach
+257,Migros,Stadtbühlstrasse 12 9200 Gossau Sg
+258,Migros,Hauptstrasse 91 4313 Möhlin
+259,Migros,St. Gallerstrasse 115 9200 Gossau Sg
+260,Migros,Hausimollstrasse 1 4622 Egerkingen
+261,Migros,Steigstrasse 5 9220 Bischofszell
+262,Migros,Hauptstrasse 117 8274 Tägerwilen
+263,Migros,Schweizerhofstrasse 6 8750 Glarus
+264,Migros,Gitschenstrasse 14 6460 Altdorf
+265,Migros,Alpsteinstrasse 8b 9100 Herisau
+266,Migros,Gotthardstrasse 67 6460 Altdorf Ur
+267,Migros,Gartenstrasse 2 9100 Herisau
+268,Migros,Hauptstrasse 63 8280 Kreuzlingen
+269,Migros,Nelkenstrasse 5 6060 Sarnen
+270,Migros,Bleichestrasse 15 8280 Kreuzlingen
+271,Migros,Lindenstrasse 3 4310 Rheinfelden
+272,Migros,Wiesenstrasse 28 4900 Langenthal
+273,Migros,Schrofenstrasse 19 8580 Amriswil
+274,Migros,Wiesenbachstrasse 7 9030 Abtwil Sg
+275,Migros,Bernstrasse 6 4950 Huttwil
+276,Migros,Grüngenstrasse 1 4416 Bubendorf
+277,Migros,Kasernenstrasse 8 4410 Liestal
+278,Migros,Rütistrasse 10a 8580 Amriswil
+279,Migros,Fürstenlandstrasse 157 9014 St.Gallen
+280,Migros,Vormüli 1 6170 Schüpfheim
+281,Migros,Mühlefeldstrasse 53 4702 Oensingen
+282,Migros,Ergolzstrasse 2 4414 Füllinsdorf
+283,Migros,Gotthardstrasse 144 6472 Erstfeld
+284,Migros,Ulmenstrasse 11 9000 St. Gallen
+285,Migros,Klosterstrasse 5 6390 Engelberg
+286,Migros,Goldgasse 13 4710 Balsthal
+287,Migros,St. Leonhardstrasse 35 9000 St. Gallen
+288,Migros,Brühlgasse 28 9000 St.Gallen
+289,Migros,Burggartenstrasse 21 4133 Pratteln
+290,Migros,Langgasse 20 9008 St. Gallen
+291,Migros,Speicherstrasse 8 9053 Teufen Ar
+292,Migros,Bachstrasse 29 9008 St. Gallen
+293,Migros,Oedenhof 1c 9300 Wittenbach
+294,Migros,Rorschacherstrasse 150 9006 St. Gallen
+295,Migros,Bernstrasse 33 3360 Herzogenbuchsee
+296,Migros,Bahnhofstrasse 27 8880 Walenstadt
+297,Migros,Rorschacherstrasse 249 9016 St. Gallen
+298,Migros,Unteres Ziel 9050 Appenzell
+299,Migros,Bahnhofstrasse 54a 8590 Romanshorn
+300,Migros,Rothausstrasse 17 4132 Muttenz
+301,Migros,Lutzertstrasse 40 4132 Muttenz
+302,Migros,Postplatz 7 4144 Arlesheim
+303,Migros,St. Gallerstrasse 6 9320 Arbon
+304,Migros,Rössligasse/Webergässchen 8 4125 Riehen
+305,Migros,Lochrietstrasse 27 8890 Flums
+306,Migros,Wollmattweg 7 4143 Dornach
+307,Migros,Chrischonastrasse 2 4127 Birsfelden
+308,Migros,Hauptstrasse 95 4147 Aesch
+309,Migros,Seestrasse 119 9326 Horn
+310,Migros,Kaspar Pfeiffer-Strasse 2 4142 Münchenstein
+311,Migros,Herrenweg 11 4153 Reinach Bl
+312,Migros,Niederbergstrasse 1 4153 Reinach Bl
+313,Migros,Ulrich-Rösch-Strasse 5 9403 Goldach
+314,Migros,Hardstrasse 105 4052 Basel
+315,Migros,Riehenstrasse 315 4058 Basel
+316,Migros,Grenzacherstrasse 62 / 64 4058 Basel
+317,Migros,Güterstrasse 180 4053 Basel
+318,Migros,Aeschenvorstadt 24 4051 Basel
+319,Migros,Centralbahnstrasse 10 4051 Basel
+320,Migros,Efringerstrasse 32 4057 Basel
+321,Migros,Trischlistrasse 15 9400 Rorschach
+322,Migros,Untere Rebgasse 11 4058 Basel
+323,Migros,Eisengasse 12 4051 Basel
+324,Migros,Hochbergerstrasse 70 4057 Basel
+325,Migros,Promenadenstrasse 83 9400 Rorschach
+326,Migros,Gorenmattstrasse 17 4102 Binningen
+327,Migros,Schützenmattstrasse 27 4051 Basel
+328,Migros,Hauptstrasse 71 4102 Binningen
+329,Migros,Hauptstrasse 22 4552 Derendingen
+330,Migros,Schlossstrasse 1a 3550 Langnau i. E.
+331,Migros,Laufenstrasse 4 4226 Breitenbach
+332,Migros,Mülhauserstrasse 70 - 72 4056 Basel
+333,Migros,Allschwilerstrasse 31 4055 Basel
+334,Migros,Mühlemattstrasse 18 4104 Oberwil
+335,Migros,Burgfelderstrasse 11 4055 Basel
+336,Migros,Therwilerstrasse 9 4107 Ettingen
+337,Migros,Neuweilerplatz 7 4054 Basel
+338,Migros,Churerstrasse 10 9470 Buchs Sg
+339,Migros,Hauptstrasse 60 - 62 4528 Zuchwil
+340,Migros,Friedhofstrasse 1 4563 Gerlafingen
+341,Migros,Spitzwaldstrasse 215 4123 Allschwil
+342,Migros,Baslerstrasse 191 4123 Allschwil
+343,Migros,Hauptstrasse 21 4562 Biberist
+344,Migros,Stossstrasse 2 9450 Altstätten Sg
+345,Migros,Sonnentalstrasse 2 9410 Heiden
+346,Migros,Baselstrasse 30 / 32 4500 Solothurn
+347,Migros,Bahnhofstrasse 1 3860 Meiringen
+348,Migros,Emmenau 3 3415 Hasle-Rüegsau
+349,Migros,Lyssachstrasse 27 3400 Burgdorf
+350,Migros,Im Rösle 2 9494 Schaan
+351,Migros,Bahnhofstrasse 4 4242 Laufen
+352,Migros,Wengistrasse 13 4500 Solothurn
+353,Migros,Bielstrasse 80 4500 Solothurn
+354,Migros,Grossfeldstrasse 56 8879 Pizolpark (Mels)
+355,Migros,Hauptstrasse 29 3427 Utzenstorf
+356,Migros,Staatsstrasse 56 9463 Oberriet Sg
+357,Migros,Solothurnstrasse 17a 3422 Kirchberg Be
+358,Migros,Fabrikstrasse 6 4513 Langendorf
+359,Migros,Hauptstrasse 51 3855 Brienz Be
+360,Migros,Wiesentalstrasse 4 9425 Thal
+361,Migros,Rhyguetstrasse 2 9424 Rheineck
+362,Migros,Landstrasse 251 9495 Triesen
+363,Migros,Bahnhofstrasse 2 9443 Widnau
+364,Migros,Nollenhornstrasse 9 9434 Au Sg
+365,Migros,Poststrasse 4 7130 Ilanz
+366,Migros,Neudorfstrasse 60 9430 St. Margrethen Sg
+367,Migros,Hintere Kirchstrasse 1 9444 Diepoldsau
+368,Migros,Freiestrasse 10 2540 Grenchen
+369,Migros,Industriestrasse 10 3321 Schönbühl Ekz
+370,Migros,Rue de l'Ecluse 1 2740 Moutier
+371,Migros,Thunstrasse 17 3510 Konolfingen
+372,Migros,Richigenstrasse 1 3076 Worb
+373,Migros,Rue de la Maltière 12 2800 Delémont
+374,Migros,Bahnhofstrasse 54 7302 Landquart
+375,Migros,Bernstrasse 14 3053 Münchenbuchsee
+376,Migros,Talweg 6 3063 Ittigen
+377,Migros,Bernstrasse 114 3072 Ostermundigen
+378,Migros,Bernstrasse 103 3052 Zollikofen
+379,Migros,Turbenweg 1 3073 Gümligen
+380,Migros,Poststrasse 1 3072 Ostermundigen 1
+381,Migros,Bahnhofplatz 5 3110 Münsingen
+382,Migros,Wankdorffeldstrasse 71 3014 Bern
+383,Migros,Rugenparkstrasse 1 3800 Interlaken
+384,Migros,Aegertiweg 33 3812 Wilderswil
+385,Migros,Via La Val 1 7013 Domat/Ems
+386,Migros,Giacomettistrasse 15 3006 Bern
+387,Migros,Egghölzlistrasse 1 / 1a 3006 Bern
+388,Migros,Breitenrainstrasse 11 3013 Bern
+389,Migros,Kalchackerstrasse 9 3047 Bremgarten b. Bern
+390,Migros,Thunstrasse 110 3006 Bern
+391,Migros,Dammweg 9 3013 Bern
+392,Migros,Thunstrasse 18 3005 Bern
+393,Migros,Masanserstrasse 240 7000 Chur
+394,Migros,Marktgasse 46 3011 Bern
+395,Migros,Oberdorfstrasse 33 3612 Steffisburg
+396,Migros,Steinbachstrasse 28 3123 Belp
+397,Migros,Ringstrasse 91 7000 Chur
+398,Migros,Bahnhofplatz 10 3011 Bern
+399,Migros,Unterdorfstrasse 10 3612 Steffisburg
+400,Migros,Christoffelunterführung 3011 Bern
+401,Migros,Zähringerstrasse 43 3012 Bern
+402,Migros,Pargherastrasse 1 - 3 7000 Chur
+403,Migros,Bubenbergplatz 8 3011 Bern
+404,Migros,Seftigenstrasse 368 3084 Wabern
+405,Migros,Schanzenstrasse 5 3000 Bern
+406,Migros,Gäuggelistrasse 28 7000 Chur
+407,Migros,Bernstrasse 223 3627 Heimberg
+408,Migros,Seftigenstrasse 1 3007 Bern
+409,Migros,Bälliz 2 3600 Thun
+410,Migros,Staatsstrasse 134 3626 Hünibach
+411,Migros,Sportallee 20 2503 Biel
+412,Migros,Staatsstrasse 16b 3652 Hilterfingen
+413,Migros,Frutigenstrasse 60 3604 Thun
+414,Migros,Bethlehemstrasse 40 3027 Bern
+415,Migros,Bläuacker 10 3098 Köniz
+416,Migros,Steinweg 28 3250 Lyss
+417,Migros,Kappelenring 2 3032 Hinterkappelen
+418,Migros,Schlösslistrasse 7 2504 Biel/Bienne
+419,Migros,Dorfstrasse 21 3661 Uetendorf
+420,Migros,Talackerstrasse 62 3604 Thun
+421,Migros,Riedbachstrasse 10 3027 Bern
+422,Migros,Bottigenstrasse 7 3018 Bern
+423,Migros,Erlenstrasse 40 2555 Brügg b. Biel
+424,Migros,Gilberte-de-Courgenay-Platz 4 3027 Bern
+425,Migros,Brüggstrasse 5 2503 Biel/Bienne
+426,Migros,Kanalgasse 36 - 38 2502 Biel/Bienne
+427,Migros,Bahnhofstrasse 3700 Spiez
+428,Migros,Bahnhofstrasse 15 2502 Biel/Bienne
+429,Migros,Lyssstrasse 15 2560 Nidau
+430,Migros,Rue de Pierre-Pertuis 11 2710 Tavannes
+431,Migros,Dorfstrasse 1 2563 Ipsach
+432,Migros,Hauptstrasse 146 7075 Churwalden
+433,Migros,Via Pian della Croce 6760 Faido
+434,Migros,Im Park 7430 Thusis
+435,Migros,Bernstrasse 36 3175 Flamatt
+436,Migros,Rue Albert-Gobat 1 2720 Tramelan
+437,Migros,Faubourg St Germain 2 2900 Porrentruy
+438,Migros,Freiburgstrasse 5b 3150 Schwarzenburg
+439,Migros,Murtenstrasse 15 3210 Kerzers
+440,Migros,Kanderstegstrasse 31 3714 Frutigen
+441,Migros,Furkastrasse 46 3984 Fiesch
+442,Migros,Chemin des Vergers 20 2520 La Neuveville
+443,Migros,Rue de la Gruère 23 2350 Saignelégier
+444,Migros,Route de Neuchâtel 40 2525 Le Landeron
+445,Migros,Käsereistrasse 3 3186 Düdingen
+446,Migros,Bernstrasse 18 3280 Murten
+447,Migros,Obere Matte 9 1716 Plaffeien
+448,Migros,Promenade 105 7270 Davos Platz
+449,Migros,Promenade 146 7260 Davos Dorf
+450,Migros,Rue Baptiste-Savoye 62 2610 St-Imier
+451,Migros,Via General Guisan 26 6710 Biasca
+452,Migros,Chemin Cité-des-Jardins 13a 1700 Fribourg
+453,Migros,Route de l'Industrie 25 1784 Courtepin
+454,Migros,Route d'Englisberg 15b 1763 Granges-Paccot
+455,Migros,Route d'Agy 2 1763 Granges-Paccot
+456,Migros,Rue Fleur-de-Lys 26 2074 Marin-Epagnier
+457,Migros,Route de Sainte-Thérèse 2a 1700 Fribourg
+458,Migros,Rue St-Pierre 2 1700 Fribourg
+459,Migros,Rue Louis-d'Affry 2 1701 Fribourg
+460,Migros,Boulevard de Pérolles 21 a 1700 Fribourg
+461,Migros,Chemin de Béthléem 7 1700 Fribourg
+462,Migros,Route des Pralettes 1 1723 Marly
+463,Migros,Route de Lossy 16b 1782 Belfaux
+464,Migros,Rue du centre 4 1752 Villars-sur-Glâne
+465,Migros,Kelchbachstrasse 16 3904 Naters
+466,Migros,Belalpstrasse 1 3900 Brig
+467,Migros,Route de Pré-Vert 5 1580 Avenches
+468,Migros,Avenue des Portes-Rouges 46 2000 Neuchâtel
+469,Migros,Kantonsstrasse 58 3902 Glis
+470,Migros,Thunstrasse 11 3770 Zweisimmen
+471,Migros,Via Cantonale 6673 Maggia
+472,Migros,Rue Comble-Emine 5 2053 Cernier
+473,Migros,Route de Matran 9 1754 Avry-sur-Matran
+474,Migros,Rue de l'Hôpital 12 2000 Neuchâtel
+475,Migros,Grand-Rhain 54 1564 Domdidier
+476,Migros,Rue du Plan 28 2000 Neuchâtel
+477,Migros,Haut de Scherwil 2 1634 La Roche Fr
+478,Migros,Place de la Gare 10 1740 Neyruz Fr
+479,Migros,Brückenweg 10 3930 Visp
+480,Migros,Kantonstrasse 3954 Leukerbad
+481,Migros,Rue de la Charrière 71 2300 La Chaux-de-Fonds
+482,Migros,Rue Jämes-Paris 4 2034 Peseux
+483,Migros,Rue Daniel-Jeanrichard 23 2300 La Chaux-de-Fonds
+484,Migros,Bahnhofstrasse 3940 Steg
+485,Migros,Charles Naine 44 2300 La Chaux-de-Fonds
+486,Migros,Via Corogna 6532 Castione
+487,Migros,Avenue de la Gare 16 2013 Colombier Ne
+488,Migros,Rue du Temple 19 1530 Payerne
+489,Migros,Via S.Gottardo 56 6648 Minusio
+490,Migros,Via al Giardino 6598 Tenero
+491,Migros,Via A. Franzoni 43 6604 Locarno
+492,Migros,Avenue du Collège 37 2017 Boudry
+493,Migros,Chemin de Ronzi 2 2016 Cortaillod
+494,Migros,Via Stefano Franscini 31 6600 Locarno
+495,Migros,Via Cantonale 40 6595 Riazzino
+496,Migros,Piazza Rinaldo Simen 8 6500 Bellinzona
+497,Migros,Via Muraccio 2 6612 Ascona
+498,Migros,Via al Ticino 28 6514 Sementina
+499,Migros,Untergstaadstrasse 3 3780 Gstaad
+500,Migros,Via Bellinzona 33 6512 Giubiasco
+501,Migros,Cho d`Punt 10 7503 Samedan
+502,Migros,Rue Bournot 35 2400 Le Locle
+503,Migros,Rue Château d'En-Bas 2 1630 Bulle
+504,Migros,Route de la Chapelle 24 1470 Estavayer-le-Lac
+505,Migros,Route de Pra-Riond 2 1635 La Tour-de-Trême
+506,Migros,Place de la Gare 1630 Bulle
+507,Migros,Rue de l'Ancien Comté 17b 1635 La Tour-de-Trême
+508,Migros,Via Serrai 5 6592 S. Antonino
+509,Migros,Rue de Combamare 21 2025 Chez-le-Bart
+510,Migros,Avenue Général Guisan 3960 Sierre
+511,Migros,Route du Rawyl 32 3963 Crans-Montana
+512,Migros,Avenue de la Gare 7 1680 Romont Fr
+513,Migros,Hôtel du Glacier 3906 Saas Fee
+514,Migros,Via Luigi Canonica 40 6950 Tesserete
+515,Migros,Via Cantonale 6807 Taverne
+516,Migros,Avenue de la Grande Fin 1 1510 Moudon
+517,Migros,Centre Commercial du Stade 1965 Savièse
+518,Migros,Via alla Bozzoreda 39 6963 Pregassona
+519,Migros,Avenue Grand-Champsec 30 1950 Sion
+520,Migros,Via San Gottardo 150 6942 Savosa
+521,Migros,Via Monte Boglia 5 6900 Lugano
+522,Migros,Avenue Ritz 31 1950 Sion
+523,Migros,Via Besso 74 6900 Massagno
+524,Migros,Rte de Montreux 56 1618 Châtel-St-Denis
+525,Migros,Avenue de France 14 - 20 1950 Sion
+526,Migros,Via Pretorio 15 6900 Lugano
+527,Migros,Via Lugano 21 6982 Agno
+528,Migros,Viale Castagnola 6900 Lugano
+529,Migros,Grand-Rue 27 2114 Fleurier
+530,Migros,Route de Lausanne 2 1610 Oron-la-Ville
+531,Migros,Rue de Lausanne 10 1400 Yverdon-les-Bains
+532,Migros,Via Geretta 6902 Lugano
+533,Migros,Rue de Neuchâtel 3 1400 Yverdon-les-Bains
+534,Migros,Via Stazione 80 6987 Caslano
+535,Migros,En Chamard 1442 Montagny-près-Yverdon
+536,Migros,Route des Rottes 15 1964 Conthey
+537,Migros,Via Cantonale 28 6916 Grancia
+538,Migros,Route du Village 37 1807 Blonay
+539,Migros,Place du Marché 6 1820 Montreux
+540,Migros,Rue du Léman 9 1815 Clarens
+541,Migros,Hofmattstrasse 12 3920 Zermatt
+542,Migros,"Lake Placid, rte des Ecluses 23 1997 Haute-Nendaz"
+543,Migros,Place des Anciens-Fossés 10b 1814 La Tour-de-Peilz
+544,Migros,Rue des Moulins 5 b 1800 Vevey
+545,Migros,Av. Gustave Coindet 11 1800 Vevey
+546,Migros,Route du Simplon 1845 Noville
+547,Migros,Rue de Praz-Palud 2 1040 Echallens
+548,Migros,Rue de l'Industrie 21 1450 Ste-Croix
+549,Migros,Via Cantonale 6818 Melano
+550,Migros,Route des Granges-Martin 22 1350 Orbe
+551,Migros,Place de la gare 5 1860 Aigle
+552,Migros,Rue des Terreaux 22 1350 Orbe
+553,Migros,Route de Bottens 1 1053 Cugy Vd
+554,Migros,Place de la Croix-Blanche 11 1066 Epalinges
+555,Migros,En Bellossy 1897 Bouveret
+556,Migros,Ch. Sous-le-Grand Pré 4 1860 Aigle
+557,Migros,Rue Centrale 43 - 45 1880 Bex
+558,Migros,Route de la Conversion 314 1093 La Conversion
+559,Migros,Route de Berne 1 1010 Lausanne
+560,Migros,Avenue de la Vallonnette 2 1012 Lausanne
+561,Migros,Rue de Gottefrey 38 1907 Saxon
+562,Migros,"Via L. Lavizzari 2, piazza alla valle 6850 Mendrisio"
+563,Migros,Chemin du Pré-de-la-Tour 3 1009 Pully
+564,Migros,Route Aloys-Fauquez 97 1018 Lausanne
+565,Migros,En Félezin 1032 Romanel-s-Lausanne
+566,Migros,Entre-deux-Fossaux 1868 Collombey
+567,Migros,Rue de la Borde 3b 1018 Lausanne
+568,Migros,Via Campagna Adorna 6850 Mendrisio
+569,Migros,Place de l'Europe 8 1003 Lausanne
+570,Migros,Rue des Terreaux 25 1003 Lausanne
+571,Migros,Avenue des Bergières 50 1004 Lausanne
+572,Migros,Avenue d'Ouchy 11 1006 Lausanne
+573,Migros,Avenue d'Echallens 63 1004 Lausanne
+574,Migros,Avenue de la Gare 36 1870 Monthey
+575,Migros,Route de Cossonay 9 1008 Prilly
+576,Migros,Avenue de la Harpe 17 1007 Lausanne
+577,Migros,Av. de Sévelin 2 ab 1007 Lausanne
+578,Migros,Av. du Simplon 15 1890 St-Maurice
+579,Migros,Les Arcades 1936 Verbier
+580,Migros,Avenue de Cour 36 1007 Lausanne
+581,Migros,Chemin du Viaduc 1 1008 Prilly
+582,Migros,Avenue de Florissant 38 1020 Renens Vd
+583,Migros,Viale Serfontana 20 6834 Morbio Inferiore
+584,Migros,Chemin du Closalet 7 1023 Crissier
+585,Migros,Rue de la Mèbre 9 1020 Renens Vd
+586,Migros,Rue du Silo 11 1020 Renens
+587,Migros,Rue de Provence 4 1926 Fully
+588,Migros,Avenue d'Epenex 4c 1020 Renens Vd
+589,Migros,Avenue du Tir-Fédéral 12 1022 Chavannes-Renens
+590,Migros,Route des Chavannes 1 1304 Cossonay-Ville
+591,Migros,Via Bernardino Luini 6830 Chiasso
+592,Migros,Avenue de la Gare 84 1022 Chavannes-près-Renens
+593,Migros,Rue de la Gare 2 1030 Bussigny-Lausanne
+594,Migros,Chemin du Croset 7 1024 Ecublens Vd
+595,Migros,Louis Favre 8a 1024 Ecublens Vd
+596,Migros,Rue de la Chapalette 1 1933 Sembrancher
+597,Migros,Grand-Rue 23 1337 Vallorbe
+598,Migros,Rue des Avouillons 8 1920 Martigny
+599,Migros,Chemin du Vuasset 2 1028 Préverenges
+600,Migros,Rue du Manoir 1 1920 Martigny
+601,Migros,Rue de la gare 19 1110 Morges
+602,Migros,Route Suisse 26 1163 Etoy
+603,Migros,Rue de la Gare 7 1347 Le Sentier
+604,Migros,Av. de la Gare 17 1180 Rolle
+605,Migros,Rue de Mauverney 22 1196 Gland
+606,Migros,Rue de la Morâche 6 1260 Nyon
+607,Migros,Chemin de l'ancien péage 1 1290 Versoix
+608,Migros,Route de Thonon 55 1245 Collonge-Bellerive
+609,Migros,Place de la Gare 2 1225 Chêne-Bourg
+610,Migros,Rue de Genève 92 1226 Thônex
+611,Migros,Chemin de la Gradelle 10 1224 Chêne-Bougeries
+612,Migros,Rue des Paquis 41 1201 Genève
+613,Migros,Rue des Eaux-Vives 17 - 19 1207 Genève
+614,Migros,Rue de la Terrassière 29 1207 Genève
+615,Migros,Rue de Lausanne 18 - 20 1201 Genève
+616,Migros,Rue du Vidollet 5 1202 Genève
+617,Migros,Route de Florissant 86 1206 Genève
+618,Migros,Place de Cornavin 3 - 7 1201 Genève
+619,Migros,Chemin de la Tourelle 2 - 4 1209 Genève
+620,Migros,Rue Sonnex 20 1218 Le Grand-Saconnex
+621,Migros,Place de la Fusterie 7 1204 Genève
+622,Migros,Rue de la Servette 93 1202 Genève
+623,Migros,Route de l'Aéroport 25 1215 Genève 15 Aéroport
+624,Migros,Avenue de Champel 61 1206 Genève
+625,Migros,Rue de Carouge 64 1205 Genève
+626,Migros,Avenue Louis-Casaï 27 1211 Genève 28
+627,Migros,Promenade de l'Europe 11 1203 Genève
+628,Migros,Boulevard Carl-Vogt 6 1205 Genève
+629,Migros,Rue Gustave-Revilliod 4 1227 Carouge Ge
+630,Migros,Rue du Marché 16 1227 Carouge Ge
+631,Migros,Avenue de Feuillasse 24 1217 Meyrin
+632,Migros,Avenue Vibert 29 1227 Carouge Ge
+633,Migros,Esplanade de Pont-Rouge 2 1212 Grand-Lancy
+634,Migros,Route de Peney 2 - 4 1214 Vernier
+635,Migros,Place du Lignon 29 a 1219 Le Lignon
+636,Migros,Rue des Bossons 78 - 80 1213 Petit-Lancy
+637,Migros,Av. des Communes-Réunies 52 1212 Grand-Lancy
+638,Migros,Route de Saint-Julien 176 1228 Plan-les-Ouates
+639,Migros,Cc Val Thoiry 1710 Thoiry
